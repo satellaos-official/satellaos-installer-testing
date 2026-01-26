@@ -1,0 +1,20 @@
+
+X.Org X Server 1.21.1.16
+X Protocol Version 11, Revision 0
+Current Operating System: Linux trixie 6.12.57+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.57-1 (2025-11-05) x86_64
+Kernel command line: BOOT_IMAGE=/boot/vmlinuz-6.12.57+deb13-amd64 root=UUID=77d45c7b-16ab-4d64-9c49-3d754a1c678b ro
+xorg-server 2:21.1.16-1.3+deb13u1 (https://www.debian.org/support) 
+Current version of pixman: 0.44.0
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Thu Jan  1 16:49:55 2026
+(==) Using config directory: "/etc/X11/xorg.conf.d"
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+(EE) event2  - ImExPS/2 Generic Explorer Mouse: client bug: event processing lagging behind by 22ms, your system is too slow
+(EE) client bug: timer event2 debounce: scheduled expiry is in the past (-180ms), your system is too slow
+(EE) client bug: timer event2 debounce short: scheduled expiry is in the past (-263ms), your system is too slow
+(EE) event7  - VirtualBox mouse integration: client bug: event processing lagging behind by 33ms, your system is too slow
+(II) Server terminated successfully (0). Closing log file.
