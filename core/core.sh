@@ -28,7 +28,6 @@ sudo apt install --no-install-recommends -y \
   xfce4-whiskermenu-plugin \
   xfce4-notifyd \
   xfce4-screenshooter \
-  xfce4-screensaver \
   xfwm4 \
   xfdesktop4 \
   thunar \
@@ -40,6 +39,7 @@ sudo apt install --no-install-recommends -y \
   lightdm \
   slick-greeter \
   lightdm-settings \
+  light-locker \
   ntfs-3g \
   pulseaudio \
   pavucontrol \
