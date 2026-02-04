@@ -28,6 +28,7 @@ sudo apt install --no-install-recommends -y \
   xfce4-whiskermenu-plugin \
   xfce4-notifyd \
   xfce4-screenshooter \
+  xfce4-screensaver \
   xfwm4 \
   xfdesktop4 \
   thunar \
@@ -39,7 +40,6 @@ sudo apt install --no-install-recommends -y \
   lightdm \
   slick-greeter \
   lightdm-settings \
-  light-locker \
   ntfs-3g \
   pulseaudio \
   pavucontrol \
@@ -71,22 +71,6 @@ sudo apt install --no-install-recommends -y \
 # --------------------------------------------------
 echo "Installing fonts and visual customization..."
 sudo apt install -y \
-  fonts-noto \
-  fonts-noto-extra \
-  fonts-noto-cjk \
-  fonts-noto-color-emoji \
-  fonts-symbola \
-  fonts-unifont \
-  fonts-dejavu \
-  fonts-liberation \
-  fonts-nanum \
-  fonts-unfonts-core \
-  fonts-ipafont-mincho \
-  fonts-ipafont-gothic \
-  fonts-takao \
-  fonts-wqy-zenhei \
-  fonts-arphic-ukai \
-  fonts-arphic-uming \
   fonts-bebas-neue \
   fonts-montserrat \
   adwaita-qt \

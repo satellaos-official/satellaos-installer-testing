@@ -8,3 +8,5 @@ git clone https://github.com/vinceliuice/Fluent-gtk-theme.git "$HOME/satellaos-i
 cd $HOME/satellaos-installer/themes/Fluent-gtk-theme/ || exit
 
 sudo ./install.sh --dest /usr/share/themes --theme all --tweaks solid
+
+rm -rf $HOME/satellaos-installer/themes/Fluent-gtk-theme/

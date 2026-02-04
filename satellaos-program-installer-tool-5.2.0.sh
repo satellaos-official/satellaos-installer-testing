@@ -128,12 +128,6 @@ install_12() {
     sudo apt install -y "$PKG_DIR/virtualbox-7.2_7.2.4-170995~Debian~trixie_amd64.deb"
     wget -O "$PKG_DIR/Oracle_VirtualBox_Extension_Pack-7.2.4.vbox-extpack" https://download.virtualbox.org/virtualbox/7.2.4/Oracle_VirtualBox_Extension_Pack-7.2.4.vbox-extpack
     sudo VBoxManage extpack install --accept-license=eb31505e56e9b4d0fbca139104da41ac6f6b98f8e78968bdf01b1f3da3c4f9ae "$PKG_DIR/Oracle_VirtualBox_Extension_Pack-7.2.4.vbox-extpack"
-
-
-    sudo tee /etc/modprobe.d/blacklist.conf > /dev/null <<EOF
-blacklist kvm
-blacklist kvm_amd
-EOF
 }
 
 install_13() {

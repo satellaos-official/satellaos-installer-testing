@@ -6,8 +6,8 @@ echo "--------------------------------------"
 echo " Available Programs"
 echo "--------------------------------------"
 echo " 1  - Google Chrome (Deb)"
-echo " 2  - Opera Stable 125.0.5729.49 (Deb)"
-echo " 3  - Vivaldi Stable 7.7.3851.66-1 (Deb)"
+echo " 2  - Opera Stable (Deb)"
+echo " 3  - Vivaldi Stable (Deb)"
 echo " 4  - Brave Browser (Deb)"
 echo " 5  - Firefox ESR (Deb)"
 echo " 6  - Steam (Deb)"
@@ -63,13 +63,23 @@ install_1() {
 }
 
 install_2() {
-    wget -O "$PKG_DIR/opera-stable_125.0.5729.49_amd64.deb" https://download5.operacdn.com/ftp/pub/opera/desktop/125.0.5729.49/linux/opera-stable_125.0.5729.49_amd64.deb
-    sudo apt install -y "$PKG_DIR/opera-stable_125.0.5729.49_amd64.deb"
+wget -qO- https://deb.opera.com/archive.key | gpg --dearmor | sudo tee /usr/share/keyrings/opera-browser.gpg > /dev/null
+
+echo "deb [signed-by=/usr/share/keyrings/opera-browser.gpg] https://deb.opera.com/opera-stable/ stable non-free" | sudo tee /etc/apt/sources.list.d/opera-archive.list
+
+sudo apt-get update
+sudo apt-get install opera-stable
 }
 
 install_3() {
-    wget -O "$PKG_DIR/vivaldi-stable_7.7.3851.66-1_amd64.deb" https://downloads.vivaldi.com/stable/vivaldi-stable_7.7.3851.66-1_amd64.deb
-    sudo apt install -y "$PKG_DIR/vivaldi-stable_7.7.3851.66-1_amd64.deb"
+wget -qO- https://repo.vivaldi.com/archive/linux_signing_key.pub \
+  | gpg --dearmor | sudo tee /usr/share/keyrings/vivaldi-browser.gpg > /dev/null
+
+echo "deb [signed-by=/usr/share/keyrings/vivaldi-browser.gpg arch=$(dpkg --print-architecture)] https://repo.vivaldi.com/archive/deb/ stable main" \
+  | sudo tee /etc/apt/sources.list.d/vivaldi-archive.list
+
+sudo apt update
+sudo apt install vivaldi-stable
 }
 
 install_4() {
@@ -118,12 +128,6 @@ install_12() {
     sudo apt install -y "$PKG_DIR/virtualbox-7.2_7.2.4-170995~Debian~trixie_amd64.deb"
     wget -O "$PKG_DIR/Oracle_VirtualBox_Extension_Pack-7.2.4.vbox-extpack" https://download.virtualbox.org/virtualbox/7.2.4/Oracle_VirtualBox_Extension_Pack-7.2.4.vbox-extpack
     sudo VBoxManage extpack install --accept-license=eb31505e56e9b4d0fbca139104da41ac6f6b98f8e78968bdf01b1f3da3c4f9ae "$PKG_DIR/Oracle_VirtualBox_Extension_Pack-7.2.4.vbox-extpack"
-
-
-    sudo tee /etc/modprobe.d/blacklist.conf > /dev/null <<EOF
-blacklist kvm
-blacklist kvm_amd
-EOF
 }
 
 install_13() {
