@@ -150,25 +150,24 @@ chmod +x "$HOME/satellaos-installer-testing/fastfetch/fastfetch.sh"
 "$HOME/satellaos-installer-testing/fastfetch/fastfetch.sh"
 
 # --------------------------------------------------
-# 21 - Apply final system configuration
-# --------------------------------------------------
-echo "21 - Applying final configuration..."
-chmod +x "$HOME/satellaos-installer-testing/config-restore.sh"
-"$HOME/satellaos-installer-testing/config-restore.sh"
-
-
-# --------------------------------------------------
-# 22 - Fonts Installer
+# 21 - Fonts Installer
 # --------------------------------------------------
 echo "22 - Fonts is Installing..."
 chmod +x "$HOME/satellaos-installer-testing/fonts-v3.sh"
 "$HOME/satellaos-installer-testing/fonts/fonts-v3.sh"
 
 # --------------------------------------------------
-# 23 - Program install
+# 22 - Program install
 # --------------------------------------------------
 echo "22 - Programs is installing..."
 chmod +x "$HOME/satellaos-installer-testing/satellaos-program-installer-tool-5.2.0.sh"
 "$HOME/satellaos-installer-testing/satellaos-program-installer-tool-5.2.0.sh"
+
+# --------------------------------------------------
+# 23 - Apply final system configuration
+# --------------------------------------------------
+echo "23 - Applying final configuration..."
+chmod +x "$HOME/satellaos-installer-testing/config-restore-2.0.sh"
+"$HOME/satellaos-installer-testing/config-restore-2.0.sh"
 
 echo "SatellaOS installation steps completed."

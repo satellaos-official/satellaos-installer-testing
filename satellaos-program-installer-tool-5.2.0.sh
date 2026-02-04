@@ -256,22 +256,3 @@ while true; do
             ;;
     esac
 done
-
-
-while true; do
-    read -r -p "Do you want to restart the system? (Y/N): " answer
-    case "$answer" in
-        [Yy]* )
-            echo "Restarting the system..."
-            sudo reboot
-            break
-            ;;
-        [Nn]* )
-            echo "Restart cancelled."
-            break
-            ;;
-        * )
-            echo "Invalid option. Please enter Y or N."
-            ;;
-    esac
-done

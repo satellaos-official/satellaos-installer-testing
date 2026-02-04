@@ -4,6 +4,36 @@
 configs:
 - level: 0
   monitors:
+  - id: "eeb5bf4550d614b77a5dd1e016aedd3cd6361986"
+    display_name: "Chi Mei Optoelectronics corp. 0x1592 (LVDS-1)"
+    geometry:
+      x: 0
+      y: 0
+      width: 1366
+      height: 768
+  icons:
+    "D666DE3966DE1A57":
+      row: 4
+      col: 0
+      last_seen: 1770140720320021
+    "/":
+      row: 1
+      col: 0
+    "trash:///":
+      row: 2
+      col: 0
+    "/home/satella":
+      row: 0
+      col: 0
+    "8EA6-DA90":
+      row: 3
+      col: 0
+      last_seen: 1770140720308767
+    "/home/satella/Masa\xFCst\xFC/New Empty File":
+      row: 4
+      col: 1
+- level: 0
+  monitors:
   - id: "e4fe321c9f902dd81304f0eb7602375a81d48342"
     display_name: "Virtual1"
     geometry:
@@ -12,30 +42,21 @@ configs:
       width: 1280
       height: 800
   icons:
-    "trash:///":
-      row: 2
+    "/home/satella/Masa\xFCst\xFC/SatellaOS 13 (Trixie).tar.bz2":
+      row: 4
       col: 0
     "2025-10-17-10-20-48-34":
       row: 3
       col: 0
       last_seen: 1766669483925109
-    "2025-11-15-11-09-09-00":
-      row: 3
-      col: 0
-      last_seen: 1766668893292496
-    "/home/satella/Masa\xFCst\xFC/SatellaOS 13 (Trixie).tar.bz2":
-      row: 4
-      col: 0
-    "/home/satella":
-      row: 0
-      col: 0
     "/media/sf_Masast":
       row: 0
       col: 1
       last_seen: 1766669730680356
+    "2025-11-15-11-09-09-00":
+      row: 3
+      col: 0
+      last_seen: 1766668893292496
     "/home/satella/Masa\xFCst\xFC/config.sh":
       row: 2
       col: 9
-    "/":
-      row: 1
-      col: 0
