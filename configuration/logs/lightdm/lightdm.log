@@ -1,212 +1,177 @@
-[+0.02s] DEBUG: Logging to /var/log/lightdm/lightdm.log
-[+0.02s] DEBUG: Starting Light Display Manager 1.32.0, UID=0 PID=838
-[+0.02s] DEBUG: Loading configuration dirs from /usr/share/lightdm/lightdm.conf.d
-[+0.02s] DEBUG: Loading configuration from /usr/share/lightdm/lightdm.conf.d/01_debian.conf
-[+0.02s] DEBUG: Loading configuration from /usr/share/lightdm/lightdm.conf.d/50-slick-greeter.conf
-[+0.02s] DEBUG: Loading configuration dirs from /usr/local/share/lightdm/lightdm.conf.d
-[+0.02s] DEBUG: Loading configuration dirs from /var/lib/flatpak/exports/share/lightdm/lightdm.conf.d
-[+0.02s] DEBUG: Loading configuration dirs from /etc/xdg/lightdm/lightdm.conf.d
-[+0.02s] DEBUG: Loading configuration from /etc/lightdm/lightdm.conf.d/10-slick.conf
-[+0.02s] DEBUG: Loading configuration from /etc/lightdm/lightdm.conf
-[+0.02s] DEBUG: Registered seat module local
-[+0.02s] DEBUG: Registered seat module xremote
-[+0.02s] DEBUG: Using D-Bus name org.freedesktop.DisplayManager
-[+0.03s] DEBUG: _g_io_module_get_default: Found default implementation local (GLocalVfs) for ‘gio-vfs’
-[+0.03s] DEBUG: Monitoring logind for seats
-[+0.03s] DEBUG: New seat added from logind: seat0
-[+0.03s] DEBUG: Seat seat0: Loading properties from config section Seat:*
-[+0.03s] DEBUG: Seat seat0 has property CanMultiSession=no
-[+0.03s] DEBUG: Seat seat0: Starting
-[+0.03s] DEBUG: Seat seat0: Creating greeter session
-[+0.11s] DEBUG: Seat seat0: Creating display server of type x
-[+0.11s] DEBUG: Could not run plymouth --ping: Failed to execute child process “plymouth” (No such file or directory)
-[+0.11s] DEBUG: Using VT 7
-[+0.11s] DEBUG: Seat seat0: Starting local X display on VT 7
-[+0.11s] DEBUG: XServer 0: Logging to /var/log/lightdm/x-0.log
-[+0.11s] DEBUG: XServer 0: Writing X server authority to /var/run/lightdm/root/:0
-[+0.11s] DEBUG: XServer 0: Launching X Server
-[+0.11s] DEBUG: Launching process 845: /usr/bin/X :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
-[+0.11s] DEBUG: XServer 0: Waiting for ready signal from X server :0
-[+0.11s] DEBUG: Acquired bus name org.freedesktop.DisplayManager
-[+0.11s] DEBUG: Registering seat with bus path /org/freedesktop/DisplayManager/Seat0
-[+0.16s] DEBUG: Loading users from org.freedesktop.Accounts
-[+0.16s] DEBUG: User /org/freedesktop/Accounts/User1000 added
-[+7.80s] DEBUG: Got signal 10 from process 845
-[+7.80s] DEBUG: XServer 0: Got signal from X server :0
-[+7.80s] DEBUG: XServer 0: Connecting to XServer :0
-[+7.89s] DEBUG: Seat seat0: Display server ready, starting session authentication
-[+7.89s] DEBUG: Session pid=873: Started with service 'lightdm-greeter', username 'lightdm'
-[+8.09s] DEBUG: Session pid=873: Authentication complete with return value 0: Success
-[+8.09s] DEBUG: Seat seat0: Session authenticated, running command
-[+8.09s] DEBUG: Session pid=873: Running command /usr/sbin/slick-greeter
-[+8.09s] DEBUG: Creating shared data directory /var/lib/lightdm/data/lightdm
-[+8.09s] DEBUG: Session pid=873: Logging to /var/log/lightdm/seat0-greeter.log
-[+9.98s] DEBUG: Activating VT 7
-[+9.98s] DEBUG: Activating login1 session c1
-[+10.01s] DEBUG: Seat seat0 changes active session to c1
-[+10.01s] DEBUG: Session c1 is already active
-[+19.03s] DEBUG: Greeter connected version=1.32.0 api=1 resettable=false
-[+23.02s] DEBUG: Greeter start authentication for satella
-[+23.02s] DEBUG: Session pid=954: Started with service 'lightdm', username 'satella'
-[+23.09s] DEBUG: Session pid=954: Got 1 message(s) from PAM
-[+23.09s] DEBUG: Prompt greeter with 1 message(s)
-[+241.80s] DEBUG: Continue authentication
-[+243.83s] DEBUG: Session pid=954: Authentication complete with return value 7: Authentication failure
-[+243.83s] DEBUG: Authenticate result for user satella: Authentication failure
-[+243.83s] DEBUG: Session pid=954: Exited with return value 1
-[+243.83s] DEBUG: Seat seat0: Session stopped
-[+243.83s] DEBUG: Greeter start authentication for satella
-[+243.84s] DEBUG: Session pid=966: Started with service 'lightdm', username 'satella'
-[+244.36s] DEBUG: Session pid=966: Got 1 message(s) from PAM
-[+244.37s] DEBUG: Prompt greeter with 1 message(s)
-[+248.39s] DEBUG: Continue authentication
-[+248.45s] DEBUG: Session pid=966: Authentication complete with return value 0: Success
-[+248.45s] DEBUG: Authenticate result for user satella: Success
-[+248.45s] DEBUG: User satella authorized
-[+248.48s] DEBUG: Greeter requests session lightdm-xsession
-[+248.48s] DEBUG: Seat seat0: Stopping greeter; display server will be re-used for user session
-[+248.48s] DEBUG: Terminating login1 session c1
-[+248.49s] DEBUG: Session pid=873: Sending SIGTERM
-[+248.67s] DEBUG: Greeter closed communication channel
-[+248.67s] DEBUG: Session pid=873: Exited with return value 0
-[+248.68s] DEBUG: Seat seat0: Session stopped
-[+248.68s] DEBUG: Seat seat0: Greeter stopped, running session
-[+248.68s] DEBUG: Registering session with bus path /org/freedesktop/DisplayManager/Session0
-[+248.69s] DEBUG: Session pid=966: Running command /etc/X11/Xsession default
-[+248.70s] DEBUG: Creating shared data directory /var/lib/lightdm/data/satella
-[+248.70s] DEBUG: Session pid=966: Logging to .xsession-errors
-[+253.05s] DEBUG: Activating VT 7
-[+253.05s] DEBUG: Activating login1 session 2
-[+253.05s] DEBUG: Seat seat0 changes active session to 
-[+253.05s] DEBUG: Seat seat0 changes active session to 2
-[+253.05s] DEBUG: Session 2 is already active
-[+2724.13s] DEBUG: Seat seat0: Locking
-[+2724.13s] DEBUG: Seat seat0: Creating greeter session
-[+2724.13s] DEBUG: Seat seat0: Creating display server of type x
-[+2724.13s] DEBUG: Using VT 8
-[+2724.13s] DEBUG: Seat seat0: Starting local X display on VT 8
-[+2724.13s] DEBUG: XServer 1: Logging to /var/log/lightdm/x-1.log
-[+2724.13s] DEBUG: XServer 1: Writing X server authority to /var/run/lightdm/root/:1
-[+2724.13s] DEBUG: XServer 1: Launching X Server
-[+2724.14s] DEBUG: Launching process 3214: /usr/bin/X :1 -seat seat0 -auth /var/run/lightdm/root/:1 -nolisten tcp vt8 -novtswitch
-[+2724.14s] DEBUG: XServer 1: Waiting for ready signal from X server :1
-[+2725.89s] DEBUG: Seat seat0 changes active session to 
-[+2728.44s] DEBUG: Got signal 10 from process 3214
-[+2728.44s] DEBUG: XServer 1: Got signal from X server :1
-[+2728.44s] DEBUG: XServer 1: Connecting to XServer :1
-[+2728.52s] DEBUG: Seat seat0: Display server ready, starting session authentication
-[+2728.52s] DEBUG: Session pid=3228: Started with service 'lightdm-greeter', username 'lightdm'
-[+2728.62s] DEBUG: Session pid=3228: Authentication complete with return value 0: Success
-[+2728.62s] DEBUG: Seat seat0: Session authenticated, running command
-[+2728.62s] DEBUG: Session pid=3228: Running command /usr/sbin/slick-greeter
-[+2728.62s] DEBUG: Creating shared data directory /var/lib/lightdm/data/lightdm
-[+2728.62s] DEBUG: Session pid=3228: Logging to /var/log/lightdm/seat0-greeter.log
-[+2729.43s] DEBUG: Activating VT 8
-[+2729.43s] DEBUG: Locking login1 session 2
-[+2729.43s] DEBUG: Activating login1 session c2
-[+2729.43s] DEBUG: Seat seat0 changes active session to c2
-[+2729.43s] DEBUG: Session c2 is already active
-[+2730.19s] DEBUG: Greeter connected version=1.32.0 api=1 resettable=false
-[+2730.64s] DEBUG: Greeter start authentication for satella
-[+2730.65s] DEBUG: Session pid=3300: Started with service 'lightdm', username 'satella'
-[+2730.70s] DEBUG: Session pid=3300: Got 1 message(s) from PAM
-[+2730.70s] DEBUG: Prompt greeter with 1 message(s)
-[+3466.02s] DEBUG: Greeter start authentication
-[+3466.02s] DEBUG: Session pid=3300: Sending SIGTERM
-[+3466.02s] DEBUG: Session pid=3338: Started with service 'lightdm', username '(null)'
-[+3466.02s] DEBUG: Session pid=3300: Terminated with signal 15
-[+3466.02s] DEBUG: Session: Failed during authentication
-[+3466.02s] DEBUG: Seat seat0: Session stopped
-[+3466.03s] DEBUG: Session pid=3338: Got 1 message(s) from PAM
-[+3466.03s] DEBUG: Prompt greeter with 1 message(s)
-[+3466.76s] DEBUG: Greeter start authentication for satella
-[+3466.76s] DEBUG: Session pid=3338: Sending SIGTERM
-[+3466.76s] DEBUG: Session pid=3339: Started with service 'lightdm', username 'satella'
-[+3466.76s] DEBUG: Session pid=3338: Terminated with signal 15
-[+3466.76s] DEBUG: Session: Failed during authentication
-[+3466.76s] DEBUG: Seat seat0: Session stopped
-[+3466.81s] DEBUG: Session pid=3339: Got 1 message(s) from PAM
-[+3466.81s] DEBUG: Prompt greeter with 1 message(s)
-[+3479.10s] DEBUG: Continue authentication
-[+3479.17s] DEBUG: Session pid=3339: Authentication complete with return value 0: Success
-[+3479.17s] DEBUG: Authenticate result for user satella: Success
-[+3479.17s] DEBUG: User satella authorized
-[+3479.19s] DEBUG: Greeter requests session lightdm-xsession
-[+3479.19s] DEBUG: Seat seat0: Returning to existing user session satella
-[+3479.19s] DEBUG: Unlocking login1 session 2
-[+3479.19s] DEBUG: Activating VT 7
-[+3480.45s] DEBUG: Seat seat0: Stopping greeter
-[+3480.45s] DEBUG: Terminating login1 session c2
-[+3480.57s] DEBUG: Session pid=3228: Sending SIGTERM
-[+3480.57s] DEBUG: Activating login1 session 2
-[+3480.57s] DEBUG: Session pid=3339: Exited with return value 0
-[+3480.57s] DEBUG: Seat seat0: Session stopped
-[+3480.57s] DEBUG: Seat seat0 changes active session to 2
-[+3480.57s] DEBUG: Session 2 is already active
-[+3480.73s] DEBUG: Greeter closed communication channel
-[+3480.73s] DEBUG: Session pid=3228: Exited with return value 0
-[+3480.73s] DEBUG: Seat seat0: Session stopped
-[+3480.73s] DEBUG: Seat seat0: Stopping display server, no sessions require it
-[+3480.73s] DEBUG: Sending signal 15 to process 3214
-[+3480.77s] DEBUG: Process 3214 exited with return value 0
-[+3480.77s] DEBUG: XServer 1: X server stopped
-[+3480.77s] DEBUG: Releasing VT 8
-[+3480.77s] DEBUG: XServer 1: Removing X server authority /var/run/lightdm/root/:1
-[+3480.77s] DEBUG: Seat seat0: Display server stopped
-[+4678.13s] DEBUG: Seat seat0: Locking
-[+4678.13s] DEBUG: Seat seat0: Creating greeter session
-[+4678.13s] DEBUG: Seat seat0: Creating display server of type x
-[+4678.13s] DEBUG: Using VT 8
-[+4678.13s] DEBUG: Seat seat0: Starting local X display on VT 8
-[+4678.13s] DEBUG: XServer 1: Logging to /var/log/lightdm/x-1.log
-[+4678.13s] DEBUG: XServer 1: Writing X server authority to /var/run/lightdm/root/:1
-[+4678.13s] DEBUG: XServer 1: Launching X Server
-[+4678.13s] DEBUG: Launching process 4156: /usr/bin/X :1 -seat seat0 -auth /var/run/lightdm/root/:1 -nolisten tcp vt8 -novtswitch
-[+4678.13s] DEBUG: XServer 1: Waiting for ready signal from X server :1
-[+4679.84s] DEBUG: Seat seat0 changes active session to 
-[+4680.77s] DEBUG: Got signal 10 from process 4156
-[+4680.77s] DEBUG: XServer 1: Got signal from X server :1
-[+4680.77s] DEBUG: XServer 1: Connecting to XServer :1
-[+4680.83s] DEBUG: Seat seat0: Display server ready, starting session authentication
-[+4680.85s] DEBUG: Session pid=4168: Started with service 'lightdm-greeter', username 'lightdm'
-[+4680.89s] DEBUG: Session pid=4168: Authentication complete with return value 0: Success
-[+4680.89s] DEBUG: Seat seat0: Session authenticated, running command
-[+4680.89s] DEBUG: Session pid=4168: Running command /usr/sbin/slick-greeter
-[+4680.89s] DEBUG: Creating shared data directory /var/lib/lightdm/data/lightdm
-[+4680.89s] DEBUG: Session pid=4168: Logging to /var/log/lightdm/seat0-greeter.log
-[+4681.88s] DEBUG: Activating VT 8
-[+4681.88s] DEBUG: Locking login1 session 2
-[+4681.89s] DEBUG: Activating login1 session c3
-[+4681.89s] DEBUG: Seat seat0 changes active session to c3
-[+4681.89s] DEBUG: Session c3 is already active
-[+4682.89s] DEBUG: Greeter connected version=1.32.0 api=1 resettable=false
-[+4683.56s] DEBUG: Greeter start authentication for satella
-[+4683.56s] DEBUG: Session pid=4239: Started with service 'lightdm', username 'satella'
-[+4683.61s] DEBUG: Session pid=4239: Got 1 message(s) from PAM
-[+4683.61s] DEBUG: Prompt greeter with 1 message(s)
-[+4690.07s] DEBUG: Continue authentication
-[+4690.16s] DEBUG: Session pid=4239: Authentication complete with return value 0: Success
-[+4690.16s] DEBUG: Authenticate result for user satella: Success
-[+4690.16s] DEBUG: User satella authorized
-[+4690.17s] DEBUG: Greeter requests session lightdm-xsession
-[+4690.17s] DEBUG: Seat seat0: Returning to existing user session satella
-[+4690.17s] DEBUG: Unlocking login1 session 2
-[+4690.17s] DEBUG: Activating VT 7
-[+4690.59s] DEBUG: Seat seat0: Stopping greeter
-[+4690.59s] DEBUG: Terminating login1 session c3
-[+4690.64s] DEBUG: Session pid=4168: Sending SIGTERM
-[+4690.64s] DEBUG: Activating login1 session 2
-[+4690.65s] DEBUG: Session pid=4239: Exited with return value 0
-[+4690.65s] DEBUG: Seat seat0: Session stopped
-[+4690.65s] DEBUG: Seat seat0 changes active session to 2
-[+4690.65s] DEBUG: Session 2 is already active
-[+4690.87s] DEBUG: Greeter closed communication channel
-[+4690.87s] DEBUG: Session pid=4168: Exited with return value 0
-[+4690.87s] DEBUG: Seat seat0: Session stopped
-[+4690.87s] DEBUG: Seat seat0: Stopping display server, no sessions require it
-[+4690.87s] DEBUG: Sending signal 15 to process 4156
-[+4691.01s] DEBUG: Process 4156 exited with return value 0
-[+4691.01s] DEBUG: XServer 1: X server stopped
-[+4691.01s] DEBUG: Releasing VT 8
-[+4691.01s] DEBUG: XServer 1: Removing X server authority /var/run/lightdm/root/:1
-[+4691.01s] DEBUG: Seat seat0: Display server stopped
+[+0.00s] DEBUG: Logging to /var/log/lightdm/lightdm.log
+[+0.00s] DEBUG: Starting Light Display Manager 1.32.0, UID=0 PID=4535
+[+0.00s] DEBUG: Loading configuration dirs from /usr/share/lightdm/lightdm.conf.d
+[+0.00s] DEBUG: Loading configuration from /usr/share/lightdm/lightdm.conf.d/01_debian.conf
+[+0.00s] DEBUG: Loading configuration from /usr/share/lightdm/lightdm.conf.d/50-slick-greeter.conf
+[+0.00s] DEBUG: Loading configuration dirs from /usr/local/share/lightdm/lightdm.conf.d
+[+0.00s] DEBUG: Loading configuration dirs from /var/lib/flatpak/exports/share/lightdm/lightdm.conf.d
+[+0.00s] DEBUG: Loading configuration dirs from /etc/xdg/lightdm/lightdm.conf.d
+[+0.00s] DEBUG: Loading configuration from /etc/lightdm/lightdm.conf.d/10-slick.conf
+[+0.00s] DEBUG: Loading configuration from /etc/lightdm/lightdm.conf
+[+0.00s] DEBUG: Registered seat module local
+[+0.00s] DEBUG: Registered seat module xremote
+[+0.00s] DEBUG: Using D-Bus name org.freedesktop.DisplayManager
+[+0.00s] DEBUG: _g_io_module_get_default: Found default implementation local (GLocalVfs) for ‘gio-vfs’
+[+0.00s] DEBUG: Monitoring logind for seats
+[+0.00s] DEBUG: New seat added from logind: seat0
+[+0.00s] DEBUG: Seat seat0: Loading properties from config section Seat:*
+[+0.00s] DEBUG: Seat seat0 has property CanMultiSession=no
+[+0.00s] DEBUG: Seat seat0: Starting
+[+0.00s] DEBUG: Seat seat0: Creating greeter session
+[+0.00s] DEBUG: Seat seat0: Creating display server of type x
+[+0.01s] DEBUG: Could not run plymouth --ping: Failed to execute child process “plymouth” (No such file or directory)
+[+0.01s] DEBUG: Using VT 7
+[+0.01s] DEBUG: Seat seat0: Starting local X display on VT 7
+[+0.01s] DEBUG: XServer 0: Logging to /var/log/lightdm/x-0.log
+[+0.01s] DEBUG: XServer 0: Writing X server authority to /var/run/lightdm/root/:0
+[+0.01s] DEBUG: XServer 0: Launching X Server
+[+0.01s] DEBUG: Launching process 4541: /usr/bin/X :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+[+0.01s] DEBUG: XServer 0: Waiting for ready signal from X server :0
+[+0.01s] DEBUG: Acquired bus name org.freedesktop.DisplayManager
+[+0.01s] DEBUG: Registering seat with bus path /org/freedesktop/DisplayManager/Seat0
+[+0.01s] DEBUG: Loading users from org.freedesktop.Accounts
+[+0.01s] DEBUG: User /org/freedesktop/Accounts/User1000 added
+[+0.11s] DEBUG: Seat seat0 changes active session to 
+[+0.88s] DEBUG: Got signal 10 from process 4541
+[+0.88s] DEBUG: XServer 0: Got signal from X server :0
+[+0.88s] DEBUG: XServer 0: Connecting to XServer :0
+[+0.88s] DEBUG: Seat seat0: Display server ready, starting session authentication
+[+0.88s] DEBUG: Session pid=4563: Started with service 'lightdm-greeter', username 'lightdm'
+[+0.90s] DEBUG: Session pid=4563: Authentication complete with return value 0: Success
+[+0.90s] DEBUG: Seat seat0: Session authenticated, running command
+[+0.90s] DEBUG: Session pid=4563: Running command /usr/sbin/slick-greeter
+[+0.90s] DEBUG: Creating shared data directory /var/lib/lightdm/data/lightdm
+[+0.90s] DEBUG: Session pid=4563: Logging to /var/log/lightdm/seat0-greeter.log
+[+1.31s] DEBUG: Activating VT 7
+[+1.31s] DEBUG: Activating login1 session c3
+[+1.31s] DEBUG: Seat seat0 changes active session to c3
+[+1.31s] DEBUG: Session c3 is already active
+[+1.83s] DEBUG: Greeter connected version=1.32.0 api=1 resettable=false
+[+1.97s] DEBUG: Greeter start authentication
+[+1.97s] DEBUG: Session pid=4653: Started with service 'lightdm', username '(null)'
+[+1.98s] DEBUG: Session pid=4653: Got 1 message(s) from PAM
+[+1.98s] DEBUG: Prompt greeter with 1 message(s)
+[+2.84s] DEBUG: Greeter start authentication for satella
+[+2.84s] DEBUG: Session pid=4653: Sending SIGTERM
+[+2.85s] DEBUG: Session pid=4707: Started with service 'lightdm', username 'satella'
+[+2.85s] DEBUG: Session pid=4653: Terminated with signal 15
+[+2.85s] DEBUG: Session: Failed during authentication
+[+2.85s] DEBUG: Seat seat0: Session stopped
+[+2.91s] DEBUG: Session pid=4707: Got 1 message(s) from PAM
+[+2.91s] DEBUG: Prompt greeter with 1 message(s)
+[+3.37s] DEBUG: Greeter start authentication
+[+3.37s] DEBUG: Session pid=4707: Sending SIGTERM
+[+3.37s] DEBUG: Session pid=4709: Started with service 'lightdm', username '(null)'
+[+3.38s] DEBUG: Session pid=4707: Terminated with signal 15
+[+3.38s] DEBUG: Session: Failed during authentication
+[+3.38s] DEBUG: Seat seat0: Session stopped
+[+3.39s] DEBUG: Session pid=4709: Got 1 message(s) from PAM
+[+3.39s] DEBUG: Prompt greeter with 1 message(s)
+[+5.11s] DEBUG: Continue authentication
+[+5.16s] DEBUG: Session pid=4709: Got 1 message(s) from PAM
+[+5.16s] DEBUG: Prompt greeter with 1 message(s)
+[+7.56s] DEBUG: Continue authentication
+[+7.61s] DEBUG: Session pid=4709: Authentication complete with return value 0: Success
+[+7.61s] DEBUG: Authenticate result for user root: Success
+[+7.62s] DEBUG: User root authorized
+[+7.62s] DEBUG: Greeter requests session lightdm-xsession
+[+7.62s] DEBUG: Seat seat0: Stopping greeter; display server will be re-used for user session
+[+7.62s] DEBUG: Terminating login1 session c3
+[+7.62s] DEBUG: Session pid=4563: Sending SIGTERM
+[+7.64s] DEBUG: Greeter closed communication channel
+[+7.64s] DEBUG: Session pid=4563: Exited with return value 0
+[+7.64s] DEBUG: Seat seat0: Session stopped
+[+7.64s] DEBUG: Seat seat0: Greeter stopped, running session
+[+7.64s] DEBUG: Registering session with bus path /org/freedesktop/DisplayManager/Session0
+[+7.64s] DEBUG: Session pid=4709: Running command /etc/X11/Xsession default
+[+7.64s] DEBUG: Creating shared data directory /var/lib/lightdm/data/root
+[+7.64s] DEBUG: Session pid=4709: Logging to .xsession-errors
+[+7.66s] DEBUG: Activating VT 7
+[+7.66s] DEBUG: Activating login1 session 11
+[+7.66s] DEBUG: Seat seat0 changes active session to 
+[+7.66s] DEBUG: Seat seat0 changes active session to 11
+[+7.66s] DEBUG: Session 11 is already active
+[+192.88s] DEBUG: Session pid=4709: Exited with return value 0
+[+192.88s] DEBUG: Seat seat0: Session stopped
+[+192.88s] DEBUG: Seat seat0: Stopping display server, no sessions require it
+[+192.88s] DEBUG: Sending signal 15 to process 4541
+[+193.34s] DEBUG: Process 4541 exited with return value 0
+[+193.34s] DEBUG: XServer 0: X server stopped
+[+193.34s] DEBUG: Releasing VT 7
+[+193.34s] DEBUG: XServer 0: Removing X server authority /var/run/lightdm/root/:0
+[+193.34s] DEBUG: Seat seat0: Display server stopped
+[+193.34s] DEBUG: Seat seat0: Active display server stopped, starting greeter
+[+193.34s] DEBUG: Seat seat0: Creating greeter session
+[+193.34s] DEBUG: Seat seat0: Creating display server of type x
+[+193.34s] DEBUG: Using VT 7
+[+193.34s] DEBUG: Seat seat0: Starting local X display on VT 7
+[+193.34s] DEBUG: XServer 0: Logging to /var/log/lightdm/x-0.log
+[+193.34s] DEBUG: XServer 0: Writing X server authority to /var/run/lightdm/root/:0
+[+193.34s] DEBUG: XServer 0: Launching X Server
+[+193.34s] DEBUG: Launching process 5813: /usr/bin/X :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+[+193.34s] DEBUG: XServer 0: Waiting for ready signal from X server :0
+[+194.15s] DEBUG: Got signal 10 from process 5813
+[+194.15s] DEBUG: XServer 0: Got signal from X server :0
+[+194.15s] DEBUG: XServer 0: Connecting to XServer :0
+[+195.24s] DEBUG: Seat seat0: Display server ready, starting session authentication
+[+195.24s] DEBUG: Session pid=5863: Started with service 'lightdm-greeter', username 'lightdm'
+[+195.24s] DEBUG: Got signal 10 from process 5813
+[+195.25s] DEBUG: Session pid=5863: Authentication complete with return value 0: Success
+[+195.25s] DEBUG: Seat seat0: Session authenticated, running command
+[+195.25s] DEBUG: Session pid=5863: Running command /usr/sbin/slick-greeter
+[+195.25s] DEBUG: Creating shared data directory /var/lib/lightdm/data/lightdm
+[+195.25s] DEBUG: Session pid=5863: Logging to /var/log/lightdm/seat0-greeter.log
+[+195.67s] DEBUG: Activating VT 7
+[+195.67s] DEBUG: Activating login1 session c4
+[+195.67s] DEBUG: Seat seat0 changes active session to c4
+[+195.67s] DEBUG: Session c4 is already active
+[+196.20s] DEBUG: Greeter connected version=1.32.0 api=1 resettable=false
+[+196.40s] DEBUG: Greeter start authentication
+[+196.40s] DEBUG: Session pid=6019: Started with service 'lightdm', username '(null)'
+[+196.41s] DEBUG: Session pid=6019: Got 1 message(s) from PAM
+[+196.41s] DEBUG: Prompt greeter with 1 message(s)
+[+197.76s] DEBUG: Greeter start authentication for satella
+[+197.76s] DEBUG: Session pid=6019: Sending SIGTERM
+[+197.76s] DEBUG: Session pid=6029: Started with service 'lightdm', username 'satella'
+[+197.76s] DEBUG: Session pid=6019: Terminated with signal 15
+[+197.76s] DEBUG: Session: Failed during authentication
+[+197.76s] DEBUG: Seat seat0: Session stopped
+[+197.82s] DEBUG: Session pid=6029: Got 1 message(s) from PAM
+[+197.82s] DEBUG: Prompt greeter with 1 message(s)
+[+200.31s] DEBUG: Greeter start authentication
+[+200.31s] DEBUG: Session pid=6029: Sending SIGTERM
+[+200.31s] DEBUG: Session pid=6038: Started with service 'lightdm', username '(null)'
+[+200.31s] DEBUG: Session pid=6029: Terminated with signal 15
+[+200.31s] DEBUG: Session: Failed during authentication
+[+200.31s] DEBUG: Seat seat0: Session stopped
+[+200.33s] DEBUG: Session pid=6038: Got 1 message(s) from PAM
+[+200.33s] DEBUG: Prompt greeter with 1 message(s)
+[+201.63s] DEBUG: Greeter start authentication for satella
+[+201.63s] DEBUG: Session pid=6038: Sending SIGTERM
+[+201.63s] DEBUG: Session pid=6039: Started with service 'lightdm', username 'satella'
+[+201.63s] DEBUG: Session pid=6038: Terminated with signal 15
+[+201.63s] DEBUG: Session: Failed during authentication
+[+201.63s] DEBUG: Seat seat0: Session stopped
+[+201.69s] DEBUG: Session pid=6039: Got 1 message(s) from PAM
+[+201.69s] DEBUG: Prompt greeter with 1 message(s)
+[+204.10s] DEBUG: Continue authentication
+[+204.16s] DEBUG: Session pid=6039: Authentication complete with return value 0: Success
+[+204.16s] DEBUG: Authenticate result for user satella: Success
+[+204.16s] DEBUG: User satella authorized
+[+204.16s] DEBUG: Greeter requests session lightdm-xsession
+[+204.16s] DEBUG: Seat seat0: Stopping greeter; display server will be re-used for user session
+[+204.16s] DEBUG: Terminating login1 session c4
+[+204.16s] DEBUG: Session pid=5863: Sending SIGTERM
+[+204.18s] DEBUG: Greeter closed communication channel
+[+204.18s] DEBUG: Session pid=5863: Exited with return value 0
+[+204.18s] DEBUG: Seat seat0: Session stopped
+[+204.18s] DEBUG: Seat seat0: Greeter stopped, running session
+[+204.18s] DEBUG: Registering session with bus path /org/freedesktop/DisplayManager/Session1
+[+204.18s] DEBUG: Session pid=6039: Running command /etc/X11/Xsession default
+[+204.18s] DEBUG: Creating shared data directory /var/lib/lightdm/data/satella
+[+204.18s] DEBUG: Session pid=6039: Logging to .xsession-errors
+[+204.58s] DEBUG: Activating VT 7
+[+204.58s] DEBUG: Activating login1 session 13
+[+204.58s] DEBUG: Seat seat0 changes active session to 
+[+204.58s] DEBUG: Seat seat0 changes active session to 13
+[+204.58s] DEBUG: Session 13 is already active

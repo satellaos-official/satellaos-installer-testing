@@ -34,18 +34,19 @@
       <property name="position-categories-alternate" type="bool" value="true"/>
       <property name="position-search-alternate" type="bool" value="true"/>
       <property name="recent" type="array">
-        <value type="string" value="xfce-keyboard-settings.desktop"/>
-        <value type="string" value="xfce4-power-manager-settings.desktop"/>
-        <value type="string" value="freedownloadmanager.desktop"/>
-        <value type="string" value="localsend_app.desktop"/>
-        <value type="string" value="brave-browser.desktop"/>
-        <value type="string" value="xfce4-mime-settings.desktop"/>
         <value type="string" value="xfce4-clipman.desktop"/>
-        <value type="string" value="vlc.desktop"/>
-        <value type="string" value="engrampa.desktop"/>
+        <value type="string" value="freedownloadmanager.desktop"/>
+        <value type="string" value="xfce-ui-settings.desktop"/>
+        <value type="string" value="localsend_app.desktop"/>
+        <value type="string" value="virtualbox.desktop"/>
+        <value type="string" value="xfce4-terminal.desktop"/>
+        <value type="string" value="xfce4-power-manager-settings.desktop"/>
         <value type="string" value="lightdm-settings.desktop"/>
+        <value type="string" value="sublime_text.desktop"/>
+        <value type="string" value="xfce4-screenshooter.desktop"/>
       </property>
       <property name="button-icon" type="string" value="/usr/share/SatellaOS/logo/SatellaOS.png"/>
+      <property name="menu-height" type="int" value="549"/>
       <property name="favorites" type="array">
         <value type="string" value="xfce4-web-browser.desktop"/>
         <value type="string" value="org.xfce.ristretto.desktop"/>
@@ -73,22 +74,50 @@
     </property>
     <property name="plugin-7" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="known-players" type="string" value="vlc"/>
+      <property name="known-players" type="string" value="Brave;vlc"/>
     </property>
     <property name="plugin-8" type="string" value="power-manager-plugin"/>
     <property name="plugin-9" type="string" value="systray">
       <property name="icon-size" type="int" value="20"/>
       <property name="known-items" type="array">
+        <value type="string" value="6rHX9V8bCp"/>
+        <value type="string" value="my1L8zy7SV"/>
+        <value type="string" value="9kSd8ryJQ4"/>
+        <value type="string" value="8_JHbDgacj"/>
+        <value type="string" value="La-1PKA7Ye"/>
+        <value type="string" value="pwKTk8KG4w"/>
+        <value type="string" value="JDDYqHGEHT"/>
+        <value type="string" value="8UCHFoPU-m"/>
+        <value type="string" value="b95kwezIOz"/>
+        <value type="string" value="dX1XSchxIu"/>
+        <value type="string" value="nY2JJRW4Up"/>
+        <value type="string" value="qBittorrent"/>
+        <value type="string" value="iOebYyELPr"/>
+        <value type="string" value="r-XOkwkbKF"/>
+        <value type="string" value="GEIftgBHrN"/>
+        <value type="string" value="HaKDBWQhvQ"/>
+        <value type="string" value="pA3D2NjpIc"/>
+        <value type="string" value="ag9HWTZSP7"/>
+        <value type="string" value="2LdyILFBCv"/>
+        <value type="string" value="jVz7CmBYFk"/>
+        <value type="string" value="_HxHCR-kcB"/>
+        <value type="string" value="chrome_status_icon_1"/>
+        <value type="string" value="Xi-csmqYcf"/>
+        <value type="string" value="steam"/>
         <value type="string" value="Free Download Manager"/>
-        <value type="string" value="xhXbgHbTM-"/>
+        <value type="string" value="H9BRlstLCO"/>
+        <value type="string" value="zero-trust-client"/>
         <value type="string" value="vlc"/>
         <value type="string" value="blueman"/>
         <value type="string" value="XZtxln1RXi"/>
       </property>
       <property name="known-legacy-items" type="array">
-        <value type="string" value="“turktelekom_te527” kablosuz ağ bağlantısı etkin: turktelekom_te527 (%36)"/>
-        <value type="string" value="“turktelekom_te527” kablosuz ağ bağlantısı etkin: turktelekom_te527 (%54)"/>
-        <value type="string" value="“turktelekom_te527” kablosuz ağ bağlantısı etkin: turktelekom_te527 (%48)"/>
+        <value type="string" value="“turktelekom_te527” kablosuz ağ bağlantısı etkin: turktelekom_te527 (%30)"/>
+        <value type="string" value="“turktelekom_te527” kablosuz ağ bağlantısı etkin: turktelekom_te527 (%66)"/>
+        <value type="string" value="“turktelekom_te527” kablosuz ağ bağlantısı etkin: turktelekom_te527 (%72)"/>
+        <value type="string" value="“turktelekom_te527” kablosuz ağ bağlantısı etkin: turktelekom_te527 (%76)"/>
+        <value type="string" value="“turktelekom_te527” kablosuz ağ bağlantısı etkin: turktelekom_te527 (%80)"/>
+        <value type="string" value="ağ bağlantısı yok"/>
         <value type="string" value="polkit-mate-authentication-agent-1"/>
         <value type="string" value="“wired connection 1” ethernet ağ bağlantısı etkin"/>
         <value type="string" value="“turktelekom_te527” kablosuz ağ bağlantısı etkin: turktelekom_te527 (%74)"/>
