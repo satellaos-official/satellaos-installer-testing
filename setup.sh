@@ -150,10 +150,17 @@ chmod +x "$HOME/satellaos-installer/satellaos-program-installer-tool-5.2.0.sh"
 "$HOME/satellaos-installer/satellaos-program-installer-tool-5.2.0.sh"
 
 # --------------------------------------------------
-# 21 - Apply final system configuration
+# 21 - Restore configuration to /etc/skel
 # --------------------------------------------------
-echo "21 - Applying final configuration..."
-chmod +x "$HOME/satellaos-installer/config-restore-2.0.sh"
-"$HOME/satellaos-installer/config-restore-2.0.sh"
+echo "21 - Restoring pre-saved configuration to /etc/skel..."
+chmod +x "$HOME/satellaos-installer/skel/skel-restore.sh"
+"$HOME/satellaos-installer/skel/skel-restore.sh"
+
+# --------------------------------------------------
+# 22 - Apply final system configuration
+# --------------------------------------------------
+echo "22 - Applying final configuration..."
+chmod +x "$HOME/satellaos-installer/config-restore-2.1.sh"
+"$HOME/satellaos-installer/config-restore-2.1.sh"
 
 echo "SatellaOS installation steps completed."
