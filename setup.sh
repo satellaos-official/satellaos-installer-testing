@@ -157,9 +157,16 @@ chmod +x "$HOME/satellaos-installer/skel/skel-restore.sh"
 "$HOME/satellaos-installer/skel/skel-restore.sh"
 
 # --------------------------------------------------
-# 22 - Apply final system configuration
+# 22 - Configure quiet console settings
 # --------------------------------------------------
-echo "22 - Applying final configuration..."
+echo "22 - Configuring /etc/sysctl.d/99-quiet-console.conf..."
+chmod +x "$HOME/satellaos-installer-testing/config-quiet/config-quiet.sh"
+"$HOME/satellaos-installer-testing/config-quiet/config-quiet.sh"
+
+# --------------------------------------------------
+# 23 - Apply final system configuration
+# --------------------------------------------------
+echo "23 - Applying final configuration..."
 chmod +x "$HOME/satellaos-installer/config-restore-2.1.sh"
 "$HOME/satellaos-installer/config-restore-2.1.sh"
 
