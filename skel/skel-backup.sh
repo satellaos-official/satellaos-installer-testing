@@ -2,6 +2,9 @@
 
 # Backup script: /etc/skel → $HOME/satellaos-installer/skel/
 
+# Install rsync
+sudo apt install -y rsync
+
 # Ensure the destination directory exists
 DEST_DIR="$HOME/satellaos-installer/skel/"
 mkdir -p "$DEST_DIR"
@@ -14,7 +17,7 @@ CURRENT_USER="$(id -u)"
 CURRENT_GROUP="$(id -g)"
 
 # Copy all contents from /etc/skel to destination
-cp -a "$SOURCE_DIR." "$DEST_DIR"
+sudo rsync -a "$SOURCE_DIR" "$DEST_DIR"
 
 # Change ownership to the current user
 chown -R "$CURRENT_USER:$CURRENT_GROUP" "$DEST_DIR"

@@ -4,6 +4,9 @@
 SOURCE_DIR="$HOME/satellaos-installer/skel/"
 DEST_DIR="/etc/skel/"
 
+# Install rsync
+sudo apt install -y rsync
+
 # Ensure the destination directory exists (with root privileges)
 sudo mkdir -p "$DEST_DIR"
 
