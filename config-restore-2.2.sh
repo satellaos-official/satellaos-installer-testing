@@ -1,71 +1,96 @@
 #!/bin/bash
-
 set -e
 
 BASE="$HOME/satellaos-installer/configuration"
 
-apply_user_config() {
-    local TARGET_HOME="$1"
-    local TARGET_USER="$2"
-
-    echo "▶ Applying user configuration for $TARGET_USER..."
-
-    #################################
-    # XFCE (USER)
-    #################################
-    if [ -d "$BASE/xfce/user/xfce4" ]; then
-        echo "Restoring XFCE (user)..."
-        rm -rf "$TARGET_HOME/.config/xfce4"  # Sudo kaldırıldı
-        cp -a "$BASE/xfce/user/xfce4" "$TARGET_HOME/.config/"  # Sudo kaldırıldı
-    fi
-
-    #################################
-    # XFCONF (USER)  ← KRİTİK
-    #################################
-    if [ -d "$BASE/xfce/xfconf/xfconf" ]; then
-        echo "Restoring XFCONF (user)..."
-        rm -rf "$TARGET_HOME/.config/xfconf"  # Sudo kaldırıldı
-        cp -a "$BASE/xfce/xfconf/xfconf" "$TARGET_HOME/.config/"  # Sudo kaldırıldı
-    fi
-
-    #################################
-    # THUNAR (USER)
-    #################################
-    if [ -d "$BASE/thunar/Thunar" ]; then
-        echo "Restoring Thunar configuration..."
-        rm -rf "$TARGET_HOME/.config/Thunar"  # Sudo kaldırıldı
-        cp -a "$BASE/thunar/Thunar" "$TARGET_HOME/.config/"  # Sudo kaldırıldı
-    fi
-
-    #################################
-    # AUTOSTART (USER)
-    #################################
-    if [ -d "$BASE/autostart/autostart" ]; then
-        echo "Restoring Autostart..."
-        rm -rf "$TARGET_HOME/.config/autostart"  # Sudo kaldırıldı
-        cp -a "$BASE/autostart/autostart" "$TARGET_HOME/.config/"  # Sudo kaldırıldı
-    fi
-
-    #################################
-    # PERMISSION FIX (USER)
-    #################################
-    echo "Fixing permissions for $TARGET_USER..."
-    chown -R "$TARGET_USER:$TARGET_USER" "$TARGET_HOME/.config"  # Sudo kaldırıldı
-}
+TARGET_USER="$HOME"
+TARGET_ROOT="/root"
 
 #################################
-# Apply user configs for $HOME and /root
+# XFCE (USER)
 #################################
-apply_user_config "$HOME" "$USER"
-apply_user_config "/root" "root"
+if [ -d "$BASE/xfce/user/xfce4" ]; then
+    echo "▶ Restoring XFCE (user)..."
+    rm -rf "$TARGET_USER/.config/xfce4"
+    mkdir -p "$TARGET_USER/.config"
+    cp -a "$BASE/xfce/user/xfce4" "$TARGET_USER/.config/"
+fi
+
+#################################
+# XFCE (ROOT)
+#################################
+if [ -d "$BASE/xfce/user/xfce4" ]; then
+    echo "▶ Restoring XFCE (root)..."
+    sudo rm -rf "$TARGET_ROOT/.config/xfce4"
+    sudo mkdir -p "$TARGET_ROOT/.config"
+    sudo cp -a "$BASE/xfce/user/xfce4" "$TARGET_ROOT/.config/"
+    sudo chown -R root:root "$TARGET_ROOT/.config/xfce4"
+fi
+
+#################################
+# XFCONF (USER)  ← KRİTİK
+#################################
+if [ -d "$BASE/xfce/xfconf/xfconf" ]; then
+    echo "▶ Restoring XFCONF (user)..."
+    rm -rf "$TARGET_USER/.config/xfconf"
+    cp -a "$BASE/xfce/xfconf/xfconf" "$TARGET_USER/.config/"
+fi
+
+#################################
+# XFCONF (ROOT)
+#################################
+if [ -d "$BASE/xfce/xfconf/xfconf" ]; then
+    echo "▶ Restoring XFCONF (root)..."
+    sudo rm -rf "$TARGET_ROOT/.config/xfconf"
+    sudo cp -a "$BASE/xfce/xfconf/xfconf" "$TARGET_ROOT/.config/"
+    sudo chown -R root:root "$TARGET_ROOT/.config/xfconf"
+fi
+
+#################################
+# THUNAR (USER)
+#################################
+if [ -d "$BASE/thunar/Thunar" ]; then
+    echo "▶ Restoring Thunar (user)..."
+    rm -rf "$TARGET_USER/.config/Thunar"
+    cp -a "$BASE/thunar/Thunar" "$TARGET_USER/.config/"
+fi
+
+#################################
+# THUNAR (ROOT)
+#################################
+if [ -d "$BASE/thunar/Thunar" ]; then
+    echo "▶ Restoring Thunar (root)..."
+    sudo rm -rf "$TARGET_ROOT/.config/Thunar"
+    sudo cp -a "$BASE/thunar/Thunar" "$TARGET_ROOT/.config/"
+    sudo chown -R root:root "$TARGET_ROOT/.config/Thunar"
+fi
+
+#################################
+# AUTOSTART (USER)
+#################################
+if [ -d "$BASE/autostart/autostart" ]; then
+    echo "▶ Restoring Autostart (user)..."
+    rm -rf "$TARGET_USER/.config/autostart"
+    cp -a "$BASE/autostart/autostart" "$TARGET_USER/.config/"
+fi
+
+#################################
+# AUTOSTART (ROOT)
+#################################
+if [ -d "$BASE/autostart/autostart" ]; then
+    echo "▶ Restoring Autostart (root)..."
+    sudo rm -rf "$TARGET_ROOT/.config/autostart"
+    sudo cp -a "$BASE/autostart/autostart" "$TARGET_ROOT/.config/"
+    sudo chown -R root:root "$TARGET_ROOT/.config/autostart"
+fi
 
 #################################
 # XFCE (SYSTEM)
 #################################
 if [ -d "$BASE/xfce/system/xfce4" ]; then
     echo "▶ Restoring XFCE (system defaults)..."
-    sudo rm -rf /etc/xdg/xfce4  # Sudo ekledik
-    sudo cp -a "$BASE/xfce/system/xfce4" /etc/xdg/  # Sudo ekledik
+    sudo rm -rf /etc/xdg/xfce4
+    sudo cp -a "$BASE/xfce/system/xfce4" /etc/xdg/
 fi
 
 #################################
@@ -73,8 +98,8 @@ fi
 #################################
 if [ -d "$BASE/lightdm/config/lightdm" ]; then
     echo "▶ Restoring LightDM configuration..."
-    sudo rm -rf /etc/lightdm  # Sudo ekledik
-    sudo cp -a "$BASE/lightdm/config/lightdm" /etc/  # Sudo ekledik
+    sudo rm -rf /etc/lightdm
+    sudo cp -a "$BASE/lightdm/config/lightdm" /etc/
 fi
 
 #################################
@@ -90,16 +115,16 @@ fi
 #################################
 if [ -d "$BASE/lightdm/gtk/.config" ]; then
     echo "▶ Restoring Greeter GTK settings..."
-    sudo rm -rf /var/lib/lightdm/.config  # Sudo ekledik
-    sudo cp -a "$BASE/lightdm/gtk/.config" /var/lib/lightdm/  # Sudo ekledik
-    sudo chown -R lightdm:lightdm /var/lib/lightdm/.config  # Sudo ekledik
+    sudo rm -rf /var/lib/lightdm/.config
+    sudo cp -a "$BASE/lightdm/gtk/.config" /var/lib/lightdm/
+    sudo chown -R lightdm:lightdm /var/lib/lightdm/.config
 fi
 
 #################################
 # LIGHTDM CACHE CLEANUP
 #################################
-sudo rm -rf /var/cache/lightdm/*  # Sudo ekledik
-sudo rm -rf /var/lib/lightdm/.cache/*  # Sudo ekledik
+sudo rm -rf /var/cache/lightdm/*
+sudo rm -rf /var/lib/lightdm/.cache/*
 
 #################################
 # DONE
@@ -112,7 +137,7 @@ while true; do
     case "$answer" in
         [Yy]* )
             echo "Restarting the system..."
-            sudo reboot  # Sudo ekledik
+            sudo reboot
             break
             ;;
         [Nn]* )

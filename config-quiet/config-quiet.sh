@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-SOURCE="$HOME/satellaos-installer-testing/config-quiet/99-quiet-console.conf"
+SOURCE="$HOME/satellaos-installer/config-quiet/99-quiet-console.conf"
 TARGET="/etc/sysctl.d/99-quiet-console.conf"
 
 echo "Configuring quiet console settings..."
