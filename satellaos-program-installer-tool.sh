@@ -3,6 +3,12 @@
 set -e
 set -u
 
+LOG_DIR="$HOME/satellaos-installer"
+mkdir -p "$LOG_DIR"
+LOG_FILE="$LOG_DIR/install_$(date '+%Y-%m-%d_%H-%M-%S').log"
+
+exec > >(while IFS= read -r line; do echo "[$(date '+%Y-%m-%d %H:%M:%S')] $line"; done | tee -a "$LOG_FILE") 2>&1
+
 echo "Version 5.2.1"
 echo "--------------------------------------"
 echo " Available Programs"
@@ -46,7 +52,7 @@ echo "36 - Warp VPN"
 echo "37 - WineHQ Stable [Debian 13 (Deb)]"
 echo "--------------------------------------"
 
-PKG_DIR="$HOME/satellaos-packages"
+PKG_DIR="$HOME/satellaos-installer/packages"
 mkdir -p "$PKG_DIR"
 
 echo "Enter the numbers of the programs you want to install."
@@ -343,15 +349,15 @@ for i in $SELECTIONS; do
 done
 
 while true; do
-    read -r -p "Do you want to delete all deb files to free up space? (Y/N): " CLEANUP
+    read -r -p "Do you want to delete all setup files to free up space? (Y/N): " CLEANUP
     case "$CLEANUP" in
         [Yy]* )
             rm -rf "$PKG_DIR"
-            echo "Deb files have been deleted."
+            echo "Setup files have been deleted."
             break
             ;;
         [Nn]* )
-            echo "Deb files have been kept."
+            echo "Setup files have been kept."
             break
             ;;
         * )
