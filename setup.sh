@@ -1,5 +1,17 @@
 #!/bin/bash
 
+sudo -v
+
+while true; do
+    sudo -v
+    sleep 60
+done &
+
+SUDO_KEEPALIVE_PID=$!
+
+# Script bitince arka plan keep-alive'ı öldür
+trap "kill $SUDO_KEEPALIVE_PID" EXIT
+
 LOG_DIR="$HOME/satellaos-installer/LOG"
 mkdir -p "$LOG_DIR"
 
