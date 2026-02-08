@@ -3,12 +3,6 @@
 set -e
 set -u
 
-LOG_DIR="$HOME/satellaos-installer"
-mkdir -p "$LOG_DIR"
-LOG_FILE="$LOG_DIR/install_$(date '+%Y-%m-%d_%H-%M-%S').log"
-
-exec > >(while IFS= read -r line; do echo "[$(date '+%Y-%m-%d %H:%M:%S')] $line"; done | tee -a "$LOG_FILE") 2>&1
-
 echo "Version 5.2.1"
 echo "--------------------------------------"
 echo " Available Programs"
