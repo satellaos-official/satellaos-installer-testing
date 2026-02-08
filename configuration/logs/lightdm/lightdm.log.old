@@ -1,0 +1,594 @@
+[+0.00s] DEBUG: Logging to /var/log/lightdm/lightdm.log
+[+0.00s] DEBUG: Starting Light Display Manager 1.32.0, UID=0 PID=1152
+[+0.00s] DEBUG: Loading configuration dirs from /usr/share/lightdm/lightdm.conf.d
+[+0.00s] DEBUG: Loading configuration from /usr/share/lightdm/lightdm.conf.d/01_debian.conf
+[+0.00s] DEBUG: Loading configuration from /usr/share/lightdm/lightdm.conf.d/50-slick-greeter.conf
+[+0.00s] DEBUG: Loading configuration dirs from /usr/local/share/lightdm/lightdm.conf.d
+[+0.00s] DEBUG: Loading configuration dirs from /var/lib/flatpak/exports/share/lightdm/lightdm.conf.d
+[+0.00s] DEBUG: Loading configuration dirs from /etc/xdg/lightdm/lightdm.conf.d
+[+0.00s] DEBUG: Loading configuration from /etc/lightdm/lightdm.conf.d/10-slick.conf
+[+0.00s] DEBUG: Loading configuration from /etc/lightdm/lightdm.conf
+[+0.00s] DEBUG: Registered seat module local
+[+0.00s] DEBUG: Registered seat module xremote
+[+0.00s] DEBUG: Using D-Bus name org.freedesktop.DisplayManager
+[+0.00s] DEBUG: _g_io_module_get_default: Found default implementation local (GLocalVfs) for ‘gio-vfs’
+[+0.01s] DEBUG: Monitoring logind for seats
+[+0.01s] DEBUG: Acquired bus name org.freedesktop.DisplayManager
+[+0.01s] DEBUG: Could not run plymouth --ping: Failed to execute child process “plymouth” (No such file or directory)
+[+0.01s] DEBUG: Loading users from org.freedesktop.Accounts
+[+0.01s] DEBUG: User /org/freedesktop/Accounts/User1000 added
+[+2.00s] DEBUG: Seat seat0 changes graphical state to true
+[+2.00s] DEBUG: New seat added from logind: seat0
+[+2.00s] DEBUG: Seat seat0: Loading properties from config section Seat:*
+[+2.00s] DEBUG: Seat seat0 has property CanMultiSession=no
+[+2.00s] DEBUG: Seat seat0: Starting
+[+2.00s] DEBUG: Seat seat0: Creating greeter session
+[+2.00s] DEBUG: Seat seat0: Creating display server of type x
+[+2.00s] DEBUG: Using VT 7
+[+2.00s] DEBUG: Seat seat0: Starting local X display on VT 7
+[+2.00s] DEBUG: XServer 0: Logging to /var/log/lightdm/x-0.log
+[+2.00s] DEBUG: XServer 0: Writing X server authority to /var/run/lightdm/root/:0
+[+2.00s] DEBUG: XServer 0: Launching X Server
+[+2.00s] DEBUG: Launching process 1200: /usr/bin/X :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+[+2.00s] DEBUG: XServer 0: Waiting for ready signal from X server :0
+[+2.00s] DEBUG: Registering seat with bus path /org/freedesktop/DisplayManager/Seat0
+[+3.21s] DEBUG: Got signal 10 from process 1200
+[+3.21s] DEBUG: XServer 0: Got signal from X server :0
+[+3.21s] DEBUG: XServer 0: Connecting to XServer :0
+[+3.21s] DEBUG: Seat seat0: Display server ready, starting session authentication
+[+3.21s] DEBUG: Session pid=1253: Started with service 'lightdm-greeter', username 'lightdm'
+[+3.23s] DEBUG: Session pid=1253: Authentication complete with return value 0: Success
+[+3.23s] DEBUG: Seat seat0: Session authenticated, running command
+[+3.23s] DEBUG: Session pid=1253: Running command /usr/sbin/slick-greeter
+[+3.23s] DEBUG: Creating shared data directory /var/lib/lightdm/data/lightdm
+[+3.23s] DEBUG: Session pid=1253: Logging to /var/log/lightdm/seat0-greeter.log
+[+3.91s] DEBUG: Activating VT 7
+[+3.91s] DEBUG: Activating login1 session c1
+[+3.91s] DEBUG: Seat seat0 changes active session to c1
+[+3.91s] DEBUG: Session c1 is already active
+[+4.81s] DEBUG: Greeter connected version=1.32.0 api=1 resettable=false
+[+5.25s] DEBUG: Greeter start authentication for satella
+[+5.25s] DEBUG: Session pid=1386: Started with service 'lightdm', username 'satella'
+[+5.31s] DEBUG: Session pid=1386: Got 1 message(s) from PAM
+[+5.31s] DEBUG: Prompt greeter with 1 message(s)
+[+1207.47s] DEBUG: Greeter start authentication
+[+1207.47s] DEBUG: Session pid=1386: Sending SIGTERM
+[+1207.47s] DEBUG: Session pid=2178: Started with service 'lightdm', username '(null)'
+[+1207.47s] DEBUG: Session pid=1386: Terminated with signal 15
+[+1207.47s] DEBUG: Session: Failed during authentication
+[+1207.47s] DEBUG: Seat seat0: Session stopped
+[+1207.49s] DEBUG: Session pid=2178: Got 1 message(s) from PAM
+[+1207.49s] DEBUG: Prompt greeter with 1 message(s)
+[+1208.29s] DEBUG: Greeter start authentication for satella
+[+1208.29s] DEBUG: Session pid=2178: Sending SIGTERM
+[+1208.29s] DEBUG: Session pid=2181: Started with service 'lightdm', username 'satella'
+[+1208.29s] DEBUG: Session pid=2178: Terminated with signal 15
+[+1208.29s] DEBUG: Session: Failed during authentication
+[+1208.29s] DEBUG: Seat seat0: Session stopped
+[+1208.34s] DEBUG: Session pid=2181: Got 1 message(s) from PAM
+[+1208.34s] DEBUG: Prompt greeter with 1 message(s)
+[+1208.85s] DEBUG: Greeter start authentication
+[+1208.85s] DEBUG: Session pid=2181: Sending SIGTERM
+[+1208.85s] DEBUG: Session pid=2183: Started with service 'lightdm', username '(null)'
+[+1208.85s] DEBUG: Session pid=2181: Terminated with signal 15
+[+1208.85s] DEBUG: Session: Failed during authentication
+[+1208.85s] DEBUG: Seat seat0: Session stopped
+[+1208.87s] DEBUG: Session pid=2183: Got 1 message(s) from PAM
+[+1208.87s] DEBUG: Prompt greeter with 1 message(s)
+[+1209.32s] DEBUG: Greeter start authentication for satella
+[+1209.32s] DEBUG: Session pid=2183: Sending SIGTERM
+[+1209.32s] DEBUG: Session pid=2184: Started with service 'lightdm', username 'satella'
+[+1209.32s] DEBUG: Session pid=2183: Terminated with signal 15
+[+1209.32s] DEBUG: Session: Failed during authentication
+[+1209.32s] DEBUG: Seat seat0: Session stopped
+[+1209.37s] DEBUG: Session pid=2184: Got 1 message(s) from PAM
+[+1209.37s] DEBUG: Prompt greeter with 1 message(s)
+[+1209.84s] DEBUG: Greeter start authentication
+[+1209.84s] DEBUG: Session pid=2184: Sending SIGTERM
+[+1209.84s] DEBUG: Session pid=2186: Started with service 'lightdm', username '(null)'
+[+1209.84s] DEBUG: Session pid=2184: Terminated with signal 15
+[+1209.84s] DEBUG: Session: Failed during authentication
+[+1209.85s] DEBUG: Seat seat0: Session stopped
+[+1209.85s] DEBUG: Session pid=2186: Got 1 message(s) from PAM
+[+1209.85s] DEBUG: Prompt greeter with 1 message(s)
+[+1210.23s] DEBUG: Greeter start authentication for satella
+[+1210.23s] DEBUG: Session pid=2186: Sending SIGTERM
+[+1210.23s] DEBUG: Session pid=2187: Started with service 'lightdm', username 'satella'
+[+1210.23s] DEBUG: Session pid=2186: Terminated with signal 15
+[+1210.23s] DEBUG: Session: Failed during authentication
+[+1210.23s] DEBUG: Seat seat0: Session stopped
+[+1210.29s] DEBUG: Session pid=2187: Got 1 message(s) from PAM
+[+1210.29s] DEBUG: Prompt greeter with 1 message(s)
+[+1210.61s] DEBUG: Greeter start authentication
+[+1210.61s] DEBUG: Session pid=2187: Sending SIGTERM
+[+1210.61s] DEBUG: Session pid=2189: Started with service 'lightdm', username '(null)'
+[+1210.61s] DEBUG: Session pid=2187: Terminated with signal 15
+[+1210.61s] DEBUG: Session: Failed during authentication
+[+1210.61s] DEBUG: Seat seat0: Session stopped
+[+1210.63s] DEBUG: Session pid=2189: Got 1 message(s) from PAM
+[+1210.63s] DEBUG: Prompt greeter with 1 message(s)
+[+1210.92s] DEBUG: Greeter start authentication for satella
+[+1210.92s] DEBUG: Session pid=2189: Sending SIGTERM
+[+1210.92s] DEBUG: Session pid=2190: Started with service 'lightdm', username 'satella'
+[+1210.92s] DEBUG: Session pid=2189: Terminated with signal 15
+[+1210.92s] DEBUG: Session: Failed during authentication
+[+1210.92s] DEBUG: Seat seat0: Session stopped
+[+1210.98s] DEBUG: Session pid=2190: Got 1 message(s) from PAM
+[+1210.98s] DEBUG: Prompt greeter with 1 message(s)
+[+1211.28s] DEBUG: Greeter start authentication
+[+1211.28s] DEBUG: Session pid=2190: Sending SIGTERM
+[+1211.28s] DEBUG: Session pid=2192: Started with service 'lightdm', username '(null)'
+[+1211.28s] DEBUG: Session pid=2190: Terminated with signal 15
+[+1211.28s] DEBUG: Session: Failed during authentication
+[+1211.28s] DEBUG: Seat seat0: Session stopped
+[+1211.29s] DEBUG: Session pid=2192: Got 1 message(s) from PAM
+[+1211.29s] DEBUG: Prompt greeter with 1 message(s)
+[+1211.69s] DEBUG: Greeter start authentication for satella
+[+1211.69s] DEBUG: Session pid=2192: Sending SIGTERM
+[+1211.69s] DEBUG: Session pid=2193: Started with service 'lightdm', username 'satella'
+[+1211.69s] DEBUG: Session pid=2192: Terminated with signal 15
+[+1211.69s] DEBUG: Session: Failed during authentication
+[+1211.69s] DEBUG: Seat seat0: Session stopped
+[+1211.74s] DEBUG: Session pid=2193: Got 1 message(s) from PAM
+[+1211.74s] DEBUG: Prompt greeter with 1 message(s)
+[+1212.09s] DEBUG: Greeter start authentication
+[+1212.09s] DEBUG: Session pid=2193: Sending SIGTERM
+[+1212.09s] DEBUG: Session pid=2197: Started with service 'lightdm', username '(null)'
+[+1212.09s] DEBUG: Session pid=2193: Terminated with signal 15
+[+1212.09s] DEBUG: Session: Failed during authentication
+[+1212.09s] DEBUG: Seat seat0: Session stopped
+[+1212.10s] DEBUG: Session pid=2197: Got 1 message(s) from PAM
+[+1212.10s] DEBUG: Prompt greeter with 1 message(s)
+[+1212.62s] DEBUG: Greeter start authentication for satella
+[+1212.62s] DEBUG: Session pid=2197: Sending SIGTERM
+[+1212.62s] DEBUG: Session pid=2199: Started with service 'lightdm', username 'satella'
+[+1212.62s] DEBUG: Session pid=2197: Terminated with signal 15
+[+1212.62s] DEBUG: Session: Failed during authentication
+[+1212.62s] DEBUG: Seat seat0: Session stopped
+[+1212.67s] DEBUG: Session pid=2199: Got 1 message(s) from PAM
+[+1212.67s] DEBUG: Prompt greeter with 1 message(s)
+[+1212.89s] DEBUG: Greeter start authentication
+[+1212.90s] DEBUG: Session pid=2199: Sending SIGTERM
+[+1212.90s] DEBUG: Session pid=2201: Started with service 'lightdm', username '(null)'
+[+1212.90s] DEBUG: Session pid=2199: Terminated with signal 15
+[+1212.90s] DEBUG: Session: Failed during authentication
+[+1212.90s] DEBUG: Seat seat0: Session stopped
+[+1212.91s] DEBUG: Session pid=2201: Got 1 message(s) from PAM
+[+1212.91s] DEBUG: Prompt greeter with 1 message(s)
+[+1213.38s] DEBUG: Greeter start authentication for satella
+[+1213.38s] DEBUG: Session pid=2201: Sending SIGTERM
+[+1213.38s] DEBUG: Session pid=2202: Started with service 'lightdm', username 'satella'
+[+1213.38s] DEBUG: Session pid=2201: Terminated with signal 15
+[+1213.38s] DEBUG: Session: Failed during authentication
+[+1213.38s] DEBUG: Seat seat0: Session stopped
+[+1213.43s] DEBUG: Session pid=2202: Got 1 message(s) from PAM
+[+1213.43s] DEBUG: Prompt greeter with 1 message(s)
+[+1213.70s] DEBUG: Greeter start authentication
+[+1213.70s] DEBUG: Session pid=2202: Sending SIGTERM
+[+1213.70s] DEBUG: Session pid=2204: Started with service 'lightdm', username '(null)'
+[+1213.70s] DEBUG: Session pid=2202: Terminated with signal 15
+[+1213.70s] DEBUG: Session: Failed during authentication
+[+1213.70s] DEBUG: Seat seat0: Session stopped
+[+1213.71s] DEBUG: Session pid=2204: Got 1 message(s) from PAM
+[+1213.71s] DEBUG: Prompt greeter with 1 message(s)
+[+1214.13s] DEBUG: Greeter start authentication for satella
+[+1214.13s] DEBUG: Session pid=2204: Sending SIGTERM
+[+1214.13s] DEBUG: Session pid=2205: Started with service 'lightdm', username 'satella'
+[+1214.14s] DEBUG: Session pid=2204: Terminated with signal 15
+[+1214.14s] DEBUG: Session: Failed during authentication
+[+1214.14s] DEBUG: Seat seat0: Session stopped
+[+1214.19s] DEBUG: Session pid=2205: Got 1 message(s) from PAM
+[+1214.19s] DEBUG: Prompt greeter with 1 message(s)
+[+1214.57s] DEBUG: Greeter start authentication
+[+1214.57s] DEBUG: Session pid=2205: Sending SIGTERM
+[+1214.57s] DEBUG: Session pid=2207: Started with service 'lightdm', username '(null)'
+[+1214.57s] DEBUG: Session pid=2205: Terminated with signal 15
+[+1214.57s] DEBUG: Session: Failed during authentication
+[+1214.57s] DEBUG: Seat seat0: Session stopped
+[+1214.58s] DEBUG: Session pid=2207: Got 1 message(s) from PAM
+[+1214.58s] DEBUG: Prompt greeter with 1 message(s)
+[+1215.02s] DEBUG: Greeter start authentication for satella
+[+1215.02s] DEBUG: Session pid=2207: Sending SIGTERM
+[+1215.03s] DEBUG: Session pid=2208: Started with service 'lightdm', username 'satella'
+[+1215.03s] DEBUG: Session pid=2207: Terminated with signal 15
+[+1215.03s] DEBUG: Session: Failed during authentication
+[+1215.03s] DEBUG: Seat seat0: Session stopped
+[+1215.09s] DEBUG: Session pid=2208: Got 1 message(s) from PAM
+[+1215.09s] DEBUG: Prompt greeter with 1 message(s)
+[+1215.31s] DEBUG: Greeter start authentication
+[+1215.31s] DEBUG: Session pid=2208: Sending SIGTERM
+[+1215.31s] DEBUG: Session pid=2210: Started with service 'lightdm', username '(null)'
+[+1215.31s] DEBUG: Session pid=2208: Terminated with signal 15
+[+1215.31s] DEBUG: Session: Failed during authentication
+[+1215.31s] DEBUG: Seat seat0: Session stopped
+[+1215.32s] DEBUG: Session pid=2210: Got 1 message(s) from PAM
+[+1215.32s] DEBUG: Prompt greeter with 1 message(s)
+[+1215.77s] DEBUG: Greeter start authentication for satella
+[+1215.77s] DEBUG: Session pid=2210: Sending SIGTERM
+[+1215.77s] DEBUG: Session pid=2211: Started with service 'lightdm', username 'satella'
+[+1215.77s] DEBUG: Session pid=2210: Terminated with signal 15
+[+1215.77s] DEBUG: Session: Failed during authentication
+[+1215.77s] DEBUG: Seat seat0: Session stopped
+[+1215.82s] DEBUG: Session pid=2211: Got 1 message(s) from PAM
+[+1215.82s] DEBUG: Prompt greeter with 1 message(s)
+[+1216.08s] DEBUG: Greeter start authentication
+[+1216.08s] DEBUG: Session pid=2211: Sending SIGTERM
+[+1216.08s] DEBUG: Session pid=2215: Started with service 'lightdm', username '(null)'
+[+1216.08s] DEBUG: Session pid=2211: Terminated with signal 15
+[+1216.08s] DEBUG: Session: Failed during authentication
+[+1216.08s] DEBUG: Seat seat0: Session stopped
+[+1216.09s] DEBUG: Session pid=2215: Got 1 message(s) from PAM
+[+1216.09s] DEBUG: Prompt greeter with 1 message(s)
+[+1216.52s] DEBUG: Greeter start authentication for satella
+[+1216.52s] DEBUG: Session pid=2215: Sending SIGTERM
+[+1216.52s] DEBUG: Session pid=2216: Started with service 'lightdm', username 'satella'
+[+1216.52s] DEBUG: Session pid=2215: Terminated with signal 15
+[+1216.52s] DEBUG: Session: Failed during authentication
+[+1216.52s] DEBUG: Seat seat0: Session stopped
+[+1216.58s] DEBUG: Session pid=2216: Got 1 message(s) from PAM
+[+1216.58s] DEBUG: Prompt greeter with 1 message(s)
+[+1216.84s] DEBUG: Greeter start authentication
+[+1216.84s] DEBUG: Session pid=2216: Sending SIGTERM
+[+1216.84s] DEBUG: Session pid=2218: Started with service 'lightdm', username '(null)'
+[+1216.84s] DEBUG: Session pid=2216: Terminated with signal 15
+[+1216.84s] DEBUG: Session: Failed during authentication
+[+1216.84s] DEBUG: Seat seat0: Session stopped
+[+1216.85s] DEBUG: Session pid=2218: Got 1 message(s) from PAM
+[+1216.85s] DEBUG: Prompt greeter with 1 message(s)
+[+1217.35s] DEBUG: Greeter start authentication for satella
+[+1217.35s] DEBUG: Session pid=2218: Sending SIGTERM
+[+1217.35s] DEBUG: Session pid=2219: Started with service 'lightdm', username 'satella'
+[+1217.35s] DEBUG: Session pid=2218: Terminated with signal 15
+[+1217.35s] DEBUG: Session: Failed during authentication
+[+1217.35s] DEBUG: Seat seat0: Session stopped
+[+1217.40s] DEBUG: Session pid=2219: Got 1 message(s) from PAM
+[+1217.40s] DEBUG: Prompt greeter with 1 message(s)
+[+1217.71s] DEBUG: Greeter start authentication
+[+1217.71s] DEBUG: Session pid=2219: Sending SIGTERM
+[+1217.71s] DEBUG: Session pid=2221: Started with service 'lightdm', username '(null)'
+[+1217.71s] DEBUG: Session pid=2219: Terminated with signal 15
+[+1217.71s] DEBUG: Session: Failed during authentication
+[+1217.71s] DEBUG: Seat seat0: Session stopped
+[+1217.72s] DEBUG: Session pid=2221: Got 1 message(s) from PAM
+[+1217.73s] DEBUG: Prompt greeter with 1 message(s)
+[+1218.27s] DEBUG: Greeter start authentication for satella
+[+1218.27s] DEBUG: Session pid=2221: Sending SIGTERM
+[+1218.27s] DEBUG: Session pid=2223: Started with service 'lightdm', username 'satella'
+[+1218.27s] DEBUG: Session pid=2221: Terminated with signal 15
+[+1218.27s] DEBUG: Session: Failed during authentication
+[+1218.27s] DEBUG: Seat seat0: Session stopped
+[+1218.33s] DEBUG: Session pid=2223: Got 1 message(s) from PAM
+[+1218.33s] DEBUG: Prompt greeter with 1 message(s)
+[+1218.59s] DEBUG: Greeter start authentication
+[+1218.59s] DEBUG: Session pid=2223: Sending SIGTERM
+[+1218.59s] DEBUG: Session pid=2225: Started with service 'lightdm', username '(null)'
+[+1218.59s] DEBUG: Session pid=2223: Terminated with signal 15
+[+1218.59s] DEBUG: Session: Failed during authentication
+[+1218.59s] DEBUG: Seat seat0: Session stopped
+[+1218.60s] DEBUG: Session pid=2225: Got 1 message(s) from PAM
+[+1218.60s] DEBUG: Prompt greeter with 1 message(s)
+[+1219.05s] DEBUG: Greeter start authentication for satella
+[+1219.05s] DEBUG: Session pid=2225: Sending SIGTERM
+[+1219.05s] DEBUG: Session pid=2226: Started with service 'lightdm', username 'satella'
+[+1219.05s] DEBUG: Session pid=2225: Terminated with signal 15
+[+1219.05s] DEBUG: Session: Failed during authentication
+[+1219.05s] DEBUG: Seat seat0: Session stopped
+[+1219.11s] DEBUG: Session pid=2226: Got 1 message(s) from PAM
+[+1219.11s] DEBUG: Prompt greeter with 1 message(s)
+[+1219.37s] DEBUG: Greeter start authentication
+[+1219.37s] DEBUG: Session pid=2226: Sending SIGTERM
+[+1219.37s] DEBUG: Session pid=2228: Started with service 'lightdm', username '(null)'
+[+1219.37s] DEBUG: Session pid=2226: Terminated with signal 15
+[+1219.37s] DEBUG: Session: Failed during authentication
+[+1219.37s] DEBUG: Seat seat0: Session stopped
+[+1219.38s] DEBUG: Session pid=2228: Got 1 message(s) from PAM
+[+1219.38s] DEBUG: Prompt greeter with 1 message(s)
+[+1219.85s] DEBUG: Greeter start authentication for satella
+[+1219.85s] DEBUG: Session pid=2228: Sending SIGTERM
+[+1219.85s] DEBUG: Session pid=2231: Started with service 'lightdm', username 'satella'
+[+1219.85s] DEBUG: Session pid=2228: Terminated with signal 15
+[+1219.85s] DEBUG: Session: Failed during authentication
+[+1219.85s] DEBUG: Seat seat0: Session stopped
+[+1219.91s] DEBUG: Session pid=2231: Got 1 message(s) from PAM
+[+1219.91s] DEBUG: Prompt greeter with 1 message(s)
+[+1220.17s] DEBUG: Greeter start authentication
+[+1220.17s] DEBUG: Session pid=2231: Sending SIGTERM
+[+1220.17s] DEBUG: Session pid=2233: Started with service 'lightdm', username '(null)'
+[+1220.17s] DEBUG: Session pid=2231: Terminated with signal 15
+[+1220.17s] DEBUG: Session: Failed during authentication
+[+1220.17s] DEBUG: Seat seat0: Session stopped
+[+1220.18s] DEBUG: Session pid=2233: Got 1 message(s) from PAM
+[+1220.18s] DEBUG: Prompt greeter with 1 message(s)
+[+1220.77s] DEBUG: Greeter start authentication for satella
+[+1220.77s] DEBUG: Session pid=2233: Sending SIGTERM
+[+1220.77s] DEBUG: Session pid=2234: Started with service 'lightdm', username 'satella'
+[+1220.77s] DEBUG: Session pid=2233: Terminated with signal 15
+[+1220.77s] DEBUG: Session: Failed during authentication
+[+1220.77s] DEBUG: Seat seat0: Session stopped
+[+1220.83s] DEBUG: Session pid=2234: Got 1 message(s) from PAM
+[+1220.83s] DEBUG: Prompt greeter with 1 message(s)
+[+1221.06s] DEBUG: Greeter start authentication
+[+1221.06s] DEBUG: Session pid=2234: Sending SIGTERM
+[+1221.06s] DEBUG: Session pid=2236: Started with service 'lightdm', username '(null)'
+[+1221.06s] DEBUG: Session pid=2234: Terminated with signal 15
+[+1221.06s] DEBUG: Session: Failed during authentication
+[+1221.06s] DEBUG: Seat seat0: Session stopped
+[+1221.08s] DEBUG: Session pid=2236: Got 1 message(s) from PAM
+[+1221.08s] DEBUG: Prompt greeter with 1 message(s)
+[+1221.57s] DEBUG: Greeter start authentication for satella
+[+1221.57s] DEBUG: Session pid=2236: Sending SIGTERM
+[+1221.57s] DEBUG: Session pid=2237: Started with service 'lightdm', username 'satella'
+[+1221.57s] DEBUG: Session pid=2236: Terminated with signal 15
+[+1221.57s] DEBUG: Session: Failed during authentication
+[+1221.57s] DEBUG: Seat seat0: Session stopped
+[+1221.63s] DEBUG: Session pid=2237: Got 1 message(s) from PAM
+[+1221.63s] DEBUG: Prompt greeter with 1 message(s)
+[+1221.82s] DEBUG: Greeter start authentication
+[+1221.82s] DEBUG: Session pid=2237: Sending SIGTERM
+[+1221.82s] DEBUG: Session pid=2239: Started with service 'lightdm', username '(null)'
+[+1221.82s] DEBUG: Session pid=2237: Terminated with signal 15
+[+1221.82s] DEBUG: Session: Failed during authentication
+[+1221.82s] DEBUG: Seat seat0: Session stopped
+[+1221.84s] DEBUG: Session pid=2239: Got 1 message(s) from PAM
+[+1221.84s] DEBUG: Prompt greeter with 1 message(s)
+[+1222.32s] DEBUG: Greeter start authentication for satella
+[+1222.32s] DEBUG: Session pid=2239: Sending SIGTERM
+[+1222.32s] DEBUG: Session pid=2240: Started with service 'lightdm', username 'satella'
+[+1222.32s] DEBUG: Session pid=2239: Terminated with signal 15
+[+1222.32s] DEBUG: Session: Failed during authentication
+[+1222.32s] DEBUG: Seat seat0: Session stopped
+[+1222.37s] DEBUG: Session pid=2240: Got 1 message(s) from PAM
+[+1222.37s] DEBUG: Prompt greeter with 1 message(s)
+[+1222.56s] DEBUG: Greeter start authentication
+[+1222.56s] DEBUG: Session pid=2240: Sending SIGTERM
+[+1222.56s] DEBUG: Session pid=2242: Started with service 'lightdm', username '(null)'
+[+1222.57s] DEBUG: Session pid=2240: Terminated with signal 15
+[+1222.57s] DEBUG: Session: Failed during authentication
+[+1222.57s] DEBUG: Seat seat0: Session stopped
+[+1222.58s] DEBUG: Session pid=2242: Got 1 message(s) from PAM
+[+1222.58s] DEBUG: Prompt greeter with 1 message(s)
+[+1223.15s] DEBUG: Greeter start authentication for satella
+[+1223.15s] DEBUG: Session pid=2242: Sending SIGTERM
+[+1223.15s] DEBUG: Session pid=2243: Started with service 'lightdm', username 'satella'
+[+1223.15s] DEBUG: Session pid=2242: Terminated with signal 15
+[+1223.15s] DEBUG: Session: Failed during authentication
+[+1223.15s] DEBUG: Seat seat0: Session stopped
+[+1223.21s] DEBUG: Session pid=2243: Got 1 message(s) from PAM
+[+1223.21s] DEBUG: Prompt greeter with 1 message(s)
+[+1223.44s] DEBUG: Greeter start authentication
+[+1223.44s] DEBUG: Session pid=2243: Sending SIGTERM
+[+1223.44s] DEBUG: Session pid=2245: Started with service 'lightdm', username '(null)'
+[+1223.44s] DEBUG: Session pid=2243: Terminated with signal 15
+[+1223.44s] DEBUG: Session: Failed during authentication
+[+1223.44s] DEBUG: Seat seat0: Session stopped
+[+1223.45s] DEBUG: Session pid=2245: Got 1 message(s) from PAM
+[+1223.45s] DEBUG: Prompt greeter with 1 message(s)
+[+1223.93s] DEBUG: Greeter start authentication for satella
+[+1223.93s] DEBUG: Session pid=2245: Sending SIGTERM
+[+1223.93s] DEBUG: Session pid=2248: Started with service 'lightdm', username 'satella'
+[+1223.93s] DEBUG: Session pid=2245: Terminated with signal 15
+[+1223.93s] DEBUG: Session: Failed during authentication
+[+1223.93s] DEBUG: Seat seat0: Session stopped
+[+1223.98s] DEBUG: Session pid=2248: Got 1 message(s) from PAM
+[+1223.98s] DEBUG: Prompt greeter with 1 message(s)
+[+1224.20s] DEBUG: Greeter start authentication
+[+1224.20s] DEBUG: Session pid=2248: Sending SIGTERM
+[+1224.20s] DEBUG: Session pid=2250: Started with service 'lightdm', username '(null)'
+[+1224.20s] DEBUG: Session pid=2248: Terminated with signal 15
+[+1224.20s] DEBUG: Session: Failed during authentication
+[+1224.20s] DEBUG: Seat seat0: Session stopped
+[+1224.22s] DEBUG: Session pid=2250: Got 1 message(s) from PAM
+[+1224.22s] DEBUG: Prompt greeter with 1 message(s)
+[+1224.67s] DEBUG: Greeter start authentication for satella
+[+1224.67s] DEBUG: Session pid=2250: Sending SIGTERM
+[+1224.67s] DEBUG: Session pid=2251: Started with service 'lightdm', username 'satella'
+[+1224.67s] DEBUG: Session pid=2250: Terminated with signal 15
+[+1224.67s] DEBUG: Session: Failed during authentication
+[+1224.67s] DEBUG: Seat seat0: Session stopped
+[+1224.72s] DEBUG: Session pid=2251: Got 1 message(s) from PAM
+[+1224.72s] DEBUG: Prompt greeter with 1 message(s)
+[+1224.95s] DEBUG: Greeter start authentication
+[+1224.95s] DEBUG: Session pid=2251: Sending SIGTERM
+[+1224.95s] DEBUG: Session pid=2253: Started with service 'lightdm', username '(null)'
+[+1224.95s] DEBUG: Session pid=2251: Terminated with signal 15
+[+1224.95s] DEBUG: Session: Failed during authentication
+[+1224.95s] DEBUG: Seat seat0: Session stopped
+[+1224.96s] DEBUG: Session pid=2253: Got 1 message(s) from PAM
+[+1224.96s] DEBUG: Prompt greeter with 1 message(s)
+[+1225.50s] DEBUG: Greeter start authentication for satella
+[+1225.50s] DEBUG: Session pid=2253: Sending SIGTERM
+[+1225.51s] DEBUG: Session pid=2254: Started with service 'lightdm', username 'satella'
+[+1225.51s] DEBUG: Session pid=2253: Terminated with signal 15
+[+1225.51s] DEBUG: Session: Failed during authentication
+[+1225.51s] DEBUG: Seat seat0: Session stopped
+[+1225.55s] DEBUG: Session pid=2254: Got 1 message(s) from PAM
+[+1225.55s] DEBUG: Prompt greeter with 1 message(s)
+[+1225.77s] DEBUG: Greeter start authentication
+[+1225.77s] DEBUG: Session pid=2254: Sending SIGTERM
+[+1225.78s] DEBUG: Session pid=2256: Started with service 'lightdm', username '(null)'
+[+1225.78s] DEBUG: Session pid=2254: Terminated with signal 15
+[+1225.78s] DEBUG: Session: Failed during authentication
+[+1225.78s] DEBUG: Seat seat0: Session stopped
+[+1225.79s] DEBUG: Session pid=2256: Got 1 message(s) from PAM
+[+1225.79s] DEBUG: Prompt greeter with 1 message(s)
+[+1226.35s] DEBUG: Greeter start authentication for satella
+[+1226.35s] DEBUG: Session pid=2256: Sending SIGTERM
+[+1226.35s] DEBUG: Session pid=2257: Started with service 'lightdm', username 'satella'
+[+1226.35s] DEBUG: Session pid=2256: Terminated with signal 15
+[+1226.35s] DEBUG: Session: Failed during authentication
+[+1226.35s] DEBUG: Seat seat0: Session stopped
+[+1226.41s] DEBUG: Session pid=2257: Got 1 message(s) from PAM
+[+1226.41s] DEBUG: Prompt greeter with 1 message(s)
+[+1226.57s] DEBUG: Greeter start authentication
+[+1226.57s] DEBUG: Session pid=2257: Sending SIGTERM
+[+1226.57s] DEBUG: Session pid=2259: Started with service 'lightdm', username '(null)'
+[+1226.57s] DEBUG: Session pid=2257: Terminated with signal 15
+[+1226.57s] DEBUG: Session: Failed during authentication
+[+1226.57s] DEBUG: Seat seat0: Session stopped
+[+1226.58s] DEBUG: Session pid=2259: Got 1 message(s) from PAM
+[+1226.58s] DEBUG: Prompt greeter with 1 message(s)
+[+1227.17s] DEBUG: Greeter start authentication for satella
+[+1227.17s] DEBUG: Session pid=2259: Sending SIGTERM
+[+1227.17s] DEBUG: Session pid=2260: Started with service 'lightdm', username 'satella'
+[+1227.17s] DEBUG: Session pid=2259: Terminated with signal 15
+[+1227.17s] DEBUG: Session: Failed during authentication
+[+1227.17s] DEBUG: Seat seat0: Session stopped
+[+1227.23s] DEBUG: Session pid=2260: Got 1 message(s) from PAM
+[+1227.23s] DEBUG: Prompt greeter with 1 message(s)
+[+1227.45s] DEBUG: Greeter start authentication
+[+1227.45s] DEBUG: Session pid=2260: Sending SIGTERM
+[+1227.45s] DEBUG: Session pid=2262: Started with service 'lightdm', username '(null)'
+[+1227.45s] DEBUG: Session pid=2260: Terminated with signal 15
+[+1227.45s] DEBUG: Session: Failed during authentication
+[+1227.45s] DEBUG: Seat seat0: Session stopped
+[+1227.47s] DEBUG: Session pid=2262: Got 1 message(s) from PAM
+[+1227.47s] DEBUG: Prompt greeter with 1 message(s)
+[+1228.08s] DEBUG: Greeter start authentication for satella
+[+1228.08s] DEBUG: Session pid=2262: Sending SIGTERM
+[+1228.08s] DEBUG: Session pid=2265: Started with service 'lightdm', username 'satella'
+[+1228.08s] DEBUG: Session pid=2262: Terminated with signal 15
+[+1228.08s] DEBUG: Session: Failed during authentication
+[+1228.08s] DEBUG: Seat seat0: Session stopped
+[+1228.12s] DEBUG: Session pid=2265: Got 1 message(s) from PAM
+[+1228.12s] DEBUG: Prompt greeter with 1 message(s)
+[+1228.44s] DEBUG: Greeter start authentication
+[+1228.44s] DEBUG: Session pid=2265: Sending SIGTERM
+[+1228.44s] DEBUG: Session pid=2267: Started with service 'lightdm', username '(null)'
+[+1228.44s] DEBUG: Session pid=2265: Terminated with signal 15
+[+1228.44s] DEBUG: Session: Failed during authentication
+[+1228.44s] DEBUG: Seat seat0: Session stopped
+[+1228.45s] DEBUG: Session pid=2267: Got 1 message(s) from PAM
+[+1228.45s] DEBUG: Prompt greeter with 1 message(s)
+[+1229.04s] DEBUG: Greeter start authentication for satella
+[+1229.04s] DEBUG: Session pid=2267: Sending SIGTERM
+[+1229.04s] DEBUG: Session pid=2268: Started with service 'lightdm', username 'satella'
+[+1229.04s] DEBUG: Session pid=2267: Terminated with signal 15
+[+1229.04s] DEBUG: Session: Failed during authentication
+[+1229.04s] DEBUG: Seat seat0: Session stopped
+[+1229.09s] DEBUG: Session pid=2268: Got 1 message(s) from PAM
+[+1229.09s] DEBUG: Prompt greeter with 1 message(s)
+[+1229.30s] DEBUG: Greeter start authentication
+[+1229.30s] DEBUG: Session pid=2268: Sending SIGTERM
+[+1229.30s] DEBUG: Session pid=2270: Started with service 'lightdm', username '(null)'
+[+1229.30s] DEBUG: Session pid=2268: Terminated with signal 15
+[+1229.30s] DEBUG: Session: Failed during authentication
+[+1229.30s] DEBUG: Seat seat0: Session stopped
+[+1229.31s] DEBUG: Session pid=2270: Got 1 message(s) from PAM
+[+1229.31s] DEBUG: Prompt greeter with 1 message(s)
+[+1232.40s] DEBUG: Continue authentication
+[+1232.45s] DEBUG: Session pid=2270: Got 1 message(s) from PAM
+[+1232.45s] DEBUG: Prompt greeter with 1 message(s)
+[+1239.32s] DEBUG: Continue authentication
+[+1239.38s] DEBUG: Session pid=2270: Authentication complete with return value 0: Success
+[+1239.38s] DEBUG: Authenticate result for user root: Success
+[+1239.38s] DEBUG: User root authorized
+[+1239.38s] DEBUG: Greeter requests session lightdm-xsession
+[+1239.38s] CRITICAL: g_dbus_connection_call_sync_internal: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+[+1239.38s] DEBUG: Writing /root/.dmrc
+[+1239.38s] DEBUG: Seat seat0: Stopping greeter; display server will be re-used for user session
+[+1239.38s] DEBUG: Terminating login1 session c1
+[+1239.39s] DEBUG: Session pid=1253: Sending SIGTERM
+[+1239.41s] DEBUG: Greeter closed communication channel
+[+1239.41s] DEBUG: Session pid=1253: Exited with return value 0
+[+1239.41s] DEBUG: Seat seat0: Session stopped
+[+1239.41s] DEBUG: Seat seat0: Greeter stopped, running session
+[+1239.41s] DEBUG: Registering session with bus path /org/freedesktop/DisplayManager/Session0
+[+1239.41s] DEBUG: Session pid=2270: Running command /etc/X11/Xsession default
+[+1239.41s] DEBUG: Creating shared data directory /var/lib/lightdm/data/root
+[+1239.41s] DEBUG: Session pid=2270: Logging to .xsession-errors
+[+1239.91s] DEBUG: Activating VT 7
+[+1239.91s] DEBUG: Activating login1 session 3
+[+1239.91s] DEBUG: Seat seat0 changes active session to 
+[+1239.91s] DEBUG: Seat seat0 changes active session to 3
+[+1239.91s] DEBUG: Session 3 is already active
+[+1243.79s] DEBUG: User /org/freedesktop/Accounts/User0 added
+[+1249.10s] DEBUG: Session pid=2270: Exited with return value 0
+[+1249.10s] DEBUG: Seat seat0: Session stopped
+[+1249.10s] DEBUG: Seat seat0: Stopping display server, no sessions require it
+[+1249.10s] DEBUG: Sending signal 15 to process 1200
+[+1249.47s] DEBUG: Process 1200 exited with return value 0
+[+1249.47s] DEBUG: XServer 0: X server stopped
+[+1249.47s] DEBUG: Releasing VT 7
+[+1249.47s] DEBUG: XServer 0: Removing X server authority /var/run/lightdm/root/:0
+[+1249.47s] DEBUG: Seat seat0: Display server stopped
+[+1249.47s] DEBUG: Seat seat0: Active display server stopped, starting greeter
+[+1249.47s] DEBUG: Seat seat0: Creating greeter session
+[+1249.47s] DEBUG: Seat seat0: Creating display server of type x
+[+1249.47s] DEBUG: Using VT 7
+[+1249.47s] DEBUG: Seat seat0: Starting local X display on VT 7
+[+1249.47s] DEBUG: XServer 0: Logging to /var/log/lightdm/x-0.log
+[+1249.47s] DEBUG: XServer 0: Writing X server authority to /var/run/lightdm/root/:0
+[+1249.47s] DEBUG: XServer 0: Launching X Server
+[+1249.47s] DEBUG: Launching process 2700: /usr/bin/X :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+[+1249.47s] DEBUG: XServer 0: Waiting for ready signal from X server :0
+[+1250.09s] DEBUG: Seat seat0 changes active session to 
+[+1250.39s] DEBUG: Got signal 10 from process 2700
+[+1250.39s] DEBUG: XServer 0: Got signal from X server :0
+[+1250.39s] DEBUG: XServer 0: Connecting to XServer :0
+[+1250.39s] DEBUG: Seat seat0: Display server ready, starting session authentication
+[+1250.39s] DEBUG: Session pid=2742: Started with service 'lightdm-greeter', username 'lightdm'
+[+1250.41s] DEBUG: Session pid=2742: Authentication complete with return value 0: Success
+[+1250.41s] DEBUG: Seat seat0: Session authenticated, running command
+[+1250.41s] DEBUG: Session pid=2742: Running command /usr/sbin/slick-greeter
+[+1250.41s] DEBUG: Creating shared data directory /var/lib/lightdm/data/lightdm
+[+1250.41s] DEBUG: Session pid=2742: Logging to /var/log/lightdm/seat0-greeter.log
+[+1250.83s] DEBUG: Activating VT 7
+[+1250.83s] DEBUG: Activating login1 session c2
+[+1250.83s] DEBUG: Seat seat0 changes active session to c2
+[+1250.83s] DEBUG: Session c2 is already active
+[+1251.40s] DEBUG: Greeter connected version=1.32.0 api=1 resettable=false
+[+1251.61s] DEBUG: Greeter start authentication
+[+1251.61s] DEBUG: Session pid=2914: Started with service 'lightdm', username '(null)'
+[+1251.62s] DEBUG: Session pid=2914: Got 1 message(s) from PAM
+[+1251.62s] DEBUG: Prompt greeter with 1 message(s)
+[+1254.74s] DEBUG: Greeter start authentication for satella
+[+1254.74s] DEBUG: Session pid=2914: Sending SIGTERM
+[+1254.74s] DEBUG: Session pid=2917: Started with service 'lightdm', username 'satella'
+[+1254.74s] DEBUG: Session pid=2914: Terminated with signal 15
+[+1254.74s] DEBUG: Session: Failed during authentication
+[+1254.74s] DEBUG: Seat seat0: Session stopped
+[+1254.80s] DEBUG: Session pid=2917: Got 1 message(s) from PAM
+[+1254.80s] DEBUG: Prompt greeter with 1 message(s)
+[+1257.92s] DEBUG: Continue authentication
+[+1257.97s] DEBUG: Session pid=2917: Authentication complete with return value 0: Success
+[+1257.97s] DEBUG: Authenticate result for user satella: Success
+[+1257.97s] DEBUG: User satella authorized
+[+1257.97s] DEBUG: Greeter requests session lightdm-xsession
+[+1257.97s] DEBUG: Seat seat0: Stopping greeter; display server will be re-used for user session
+[+1257.97s] DEBUG: Terminating login1 session c2
+[+1257.97s] DEBUG: Session pid=2742: Sending SIGTERM
+[+1257.99s] DEBUG: Greeter closed communication channel
+[+1257.99s] DEBUG: Session pid=2742: Exited with return value 0
+[+1257.99s] DEBUG: Seat seat0: Session stopped
+[+1257.99s] DEBUG: Seat seat0: Greeter stopped, running session
+[+1257.99s] DEBUG: Registering session with bus path /org/freedesktop/DisplayManager/Session1
+[+1257.99s] DEBUG: Session pid=2917: Running command /etc/X11/Xsession default
+[+1257.99s] DEBUG: Creating shared data directory /var/lib/lightdm/data/satella
+[+1257.99s] DEBUG: Session pid=2917: Logging to .xsession-errors
+[+1258.40s] DEBUG: Activating VT 7
+[+1258.40s] DEBUG: Activating login1 session 6
+[+1258.40s] DEBUG: Seat seat0 changes active session to 
+[+1258.40s] DEBUG: Seat seat0 changes active session to 6
+[+1258.40s] DEBUG: Session 6 is already active
+[+1401.19s] DEBUG: Seat seat0 changes active session to 
+[+1406.24s] DEBUG: Seat seat0 changes active session to 8
+[+1493.21s] DEBUG: Got signal 15 from process 1
+[+1493.21s] DEBUG: Caught Terminated signal, shutting down
+[+1493.21s] DEBUG: Stopping display manager
+[+1493.21s] DEBUG: Seat seat0: Stopping
+[+1493.21s] DEBUG: Seat seat0: Stopping display server
+[+1493.21s] DEBUG: Sending signal 15 to process 2700
+[+1493.21s] DEBUG: Seat seat0: Stopping session
+[+1493.21s] DEBUG: Terminating login1 session 6
+[+1493.22s] DEBUG: Session pid=2917: Sending SIGTERM
+[+1493.30s] DEBUG: Process 2700 exited with return value 0
+[+1493.30s] DEBUG: XServer 0: X server stopped
+[+1493.30s] DEBUG: Releasing VT 7
+[+1493.30s] DEBUG: XServer 0: Removing X server authority /var/run/lightdm/root/:0
+[+1493.30s] DEBUG: Seat seat0: Display server stopped
+[+1493.31s] DEBUG: Session pid=2917: Exited with return value 1
+[+1493.31s] DEBUG: Seat seat0: Session stopped
+[+1493.31s] DEBUG: Seat seat0: Stopped
+[+1493.31s] DEBUG: Display manager stopped
+[+1493.31s] DEBUG: Stopping daemon
+[+1493.32s] DEBUG: Exiting with return value 0

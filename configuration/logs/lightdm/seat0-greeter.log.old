@@ -1,0 +1,113 @@
+[+0,00s] DEBUG: _g_io_module_get_default: Found default implementation dconf (DConfSettingsBackend) for ‘gsettings-backend’
+[+0,00s] DEBUG: settings.vala:169: Overriding dconf setting for background with /usr/share/SatellaOS/backgrounds/Makima Wallpaper.jpg
+[+0,00s] DEBUG: settings.vala:178: Resetting dconf setting for background-color to default
+[+0,00s] DEBUG: settings.vala:178: Resetting dconf setting for logo to default
+[+0,00s] DEBUG: settings.vala:178: Resetting dconf setting for other-monitors-logo to default
+[+0,00s] DEBUG: settings.vala:169: Overriding dconf setting for theme-name with Fluent-Dark
+[+0,00s] DEBUG: settings.vala:169: Overriding dconf setting for icon-theme-name with Papirus
+[+0,00s] DEBUG: settings.vala:169: Overriding dconf setting for cursor-theme-name with Bibata-Modern-Classic
+[+0,00s] DEBUG: settings.vala:178: Resetting dconf setting for font-name to default
+[+0,00s] DEBUG: settings.vala:178: Resetting dconf setting for play-ready-sound to default
+[+0,00s] DEBUG: settings.vala:178: Resetting dconf setting for xft-hintstyle to default
+[+0,00s] DEBUG: settings.vala:178: Resetting dconf setting for xft-rgba to default
+[+0,00s] DEBUG: settings.vala:178: Resetting dconf setting for enable-hidpi to default
+[+0,00s] DEBUG: settings.vala:178: Resetting dconf setting for only-on-monitor to default
+[+0,00s] DEBUG: settings.vala:178: Resetting dconf setting for clock-format to default
+[+0,00s] DEBUG: settings.vala:178: Resetting dconf setting for onscreen-keyboard-layout to default
+[+0,00s] DEBUG: settings.vala:178: Resetting dconf setting for content-align to default
+[+0,00s] DEBUG: settings.vala:187: Overriding dconf setting for draw-user-backgrounds
+[+0,00s] DEBUG: settings.vala:196: Resetting dconf setting for stretch-background-across-monitors to default
+[+0,00s] DEBUG: settings.vala:196: Resetting dconf setting for draw-grid to default
+[+0,00s] DEBUG: settings.vala:196: Resetting dconf setting for show-hostname to default
+[+0,00s] DEBUG: settings.vala:196: Resetting dconf setting for show-power to default
+[+0,00s] DEBUG: settings.vala:196: Resetting dconf setting for show-a11y to default
+[+0,00s] DEBUG: settings.vala:196: Resetting dconf setting for show-clock to default
+[+0,00s] DEBUG: settings.vala:196: Resetting dconf setting for show-keyboard to default
+[+0,00s] DEBUG: settings.vala:196: Resetting dconf setting for show-quit to default
+[+0,00s] DEBUG: settings.vala:196: Resetting dconf setting for xft-antialias to default
+[+0,00s] DEBUG: settings.vala:196: Resetting dconf setting for activate-numlock to default
+[+0,00s] DEBUG: settings.vala:214: Resetting dconf setting for xft-dpi to default
+[+0,00s] DEBUG: settings.vala:214: Resetting dconf setting for cursor-theme-size to default
+[+0,00s] DEBUG: settings.vala:232: Resetting dconf setting for hidden-users to default
+[+0,00s] DEBUG: settings.vala:232: Resetting dconf setting for group-filter to default
+[+0,00s] DEBUG: slick-greeter.vala:722: HiDPI support: auto
+[+0,37s] DEBUG: unsetenv() is not thread-safe and should not be used after threads are created
+[+0,37s] WARNING: AT-SPI: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.ServiceUnknown: The name org.a11y.Bus was not provided by any .service files
+[+0,37s] DEBUG: slick-greeter.vala:746: Starting slick-greeter 2.0.9 UID=102 LANG=tr_TR.UTF-8
+[+0,37s] DEBUG: slick-greeter.vala:749: Setting cursor
+[+0,37s] DEBUG: slick-greeter.vala:763: Loading command line options
+[+0,37s] DEBUG: slick-greeter.vala:790: Setting GTK+ settings
+[+0,42s] DEBUG: _g_io_module_get_default: Found default implementation gvfs (GDaemonVfs) for ‘gio-vfs’
+[+0,45s] DEBUG: slick-greeter.vala:794: Setting GTK theme: Fluent-Dark
+[+0,48s] DEBUG: slick-greeter.vala:799: Setting icon theme: Papirus
+[+0,48s] DEBUG: slick-greeter.vala:804: Setting cursor theme: Bibata-Modern-Classic
+[+0,48s] DEBUG: slick-greeter.vala:809: Settings cursor theme size: 24
+[+0,49s] DEBUG: slick-greeter.vala:828: Creating Slick Greeter
+[+0,49s] DEBUG: slick-greeter.vala:55: Creating background surface
+[+0,50s] DEBUG: Connecting to display manager...
+[+0,50s] DEBUG: Wrote 26 bytes to daemon
+[+0,50s] DEBUG: Read 8 bytes from daemon
+[+0,50s] DEBUG: Read 168 bytes from daemon
+[+0,50s] DEBUG: Connected api=1 version=1.32.0 hide-users=false has-guest-account=false default-session=lightdm-xsession show-manual-login=true show-remote-login=true
+[+0,59s] DEBUG: Loading users from org.freedesktop.Accounts
+[+0,59s] DEBUG: User /org/freedesktop/Accounts/User1000 added
+[+0,59s] DEBUG: user-list.vala:1064: Adding/updating user satella (satella)
+[+0,60s] DEBUG: Loading sessions from org.freedesktop.DisplayManager
+[+0,62s] DEBUG: main-window.vala:259: Monitor 0 is 1366x768 pixels at 0,0
+[+0,62s] DEBUG: main-window.vala:275: MainWindow is 0x0 pixels
+[+0,62s] DEBUG: slick-greeter.vala:831: Showing greeter
+[+0,62s] DEBUG: slick-greeter.vala:313: Showing main window
+[+0,64s] DEBUG: background.vala:66: Making background #000000 at 1366x768
+[+0,64s] DEBUG: background.vala:77: Render of background #000000 complete
+[+0,64s] DEBUG: Loaded session /usr/share/xsessions/lightdm-xsession.desktop (Default Xsession, )
+[+0,64s] DEBUG: Loaded session /usr/share/xsessions/xfce.desktop (Xfce Oturumu, Xfce'yi masaüstü ortamınız olarak kullanmak için bu oturumu kullanın)
+[+0,64s] DEBUG: Loaded session /usr/share/wayland-sessions/xfce-wayland.desktop (Xfce Oturumu (Wayland), Xfce'yi masaüstü ortamınız olarak kullanmak için bu oturumu kullanın)
+[+0,64s] DEBUG: Starting authentication for user (null)...
+[+0,64s] DEBUG: Wrote 16 bytes to daemon
+[+0,64s] DEBUG: slick-greeter.vala:841: Starting main loop
+[+0,65s] DEBUG: background.vala:605: Regenerating backgrounds
+[+0,65s] DEBUG: background.vala:66: Making background #000000 at 1366x768
+[+0,65s] DEBUG: background.vala:77: Render of background #000000 complete
+[+0,65s] DEBUG: background.vala:66: Making background /usr/share/SatellaOS/backgrounds/Makima Wallpaper.jpg at 1366x768
+[+0,65s] DEBUG: background.vala:605: Regenerating backgrounds
+[+0,65s] DEBUG: background.vala:66: Making background #000000 at 1366x768
+[+0,65s] DEBUG: background.vala:77: Render of background #000000 complete
+[+0,65s] DEBUG: background.vala:66: Making background /usr/share/SatellaOS/backgrounds/Makima Wallpaper.jpg at 1366x768
+[+0,66s] DEBUG: Read 8 bytes from daemon
+[+0,66s] DEBUG: Read 26 bytes from daemon
+[+0,66s] DEBUG: Prompt user with 1 message(s)
+[+0,69s] DEBUG: slick-greeter.vala:301: starting system-ready sound
+[+0,69s] DEBUG: background.vala:119: Render of background /usr/share/SatellaOS/backgrounds/Makima Wallpaper.jpg complete
+[+0,70s] DEBUG: background.vala:119: Render of background /usr/share/SatellaOS/backgrounds/Makima Wallpaper.jpg complete
+[+1,51s] DEBUG: Starting authentication for user satella...
+[+1,51s] DEBUG: Wrote 23 bytes to daemon
+[+1,58s] DEBUG: Read 8 bytes from daemon
+[+1,58s] DEBUG: Read 37 bytes from daemon
+[+1,58s] DEBUG: Prompt user with 1 message(s)
+[+2,04s] DEBUG: Starting authentication for user (null)...
+[+2,04s] DEBUG: Wrote 16 bytes to daemon
+[+2,06s] DEBUG: Read 8 bytes from daemon
+[+2,06s] DEBUG: Read 26 bytes from daemon
+[+2,06s] DEBUG: Prompt user with 1 message(s)
+[+3,78s] DEBUG: Providing response to display manager
+[+3,78s] DEBUG: Wrote 20 bytes to daemon
+[+3,83s] DEBUG: Read 8 bytes from daemon
+[+3,83s] DEBUG: Read 34 bytes from daemon
+[+3,83s] DEBUG: Prompt user with 1 message(s)
+[+4,22s] CRITICAL: xapp_kbd_layout_controller_get_current_short_group_label: assertion 'controller->priv->enabled' failed
+[+4,22s] CRITICAL: xapp_kbd_layout_controller_get_current_name: assertion 'controller->priv->enabled' failed
+[+4,85s] CRITICAL: xapp_kbd_layout_controller_get_current_short_group_label: assertion 'controller->priv->enabled' failed
+[+4,85s] CRITICAL: xapp_kbd_layout_controller_get_current_name: assertion 'controller->priv->enabled' failed
+[+6,23s] DEBUG: Providing response to display manager
+[+6,23s] DEBUG: Wrote 22 bytes to daemon
+[+6,29s] DEBUG: Read 8 bytes from daemon
+[+6,29s] DEBUG: Read 16 bytes from daemon
+[+6,29s] DEBUG: Authentication complete for user root with return code 0
+[+6,29s] DEBUG: main-window.vala:234: Killing orca and onboard
+[+6,29s] DEBUG: Starting session lightdm-xsession
+[+6,29s] DEBUG: Wrote 28 bytes to daemon
+[+6,29s] DEBUG: Read 8 bytes from daemon
+[+6,29s] DEBUG: Read 4 bytes from daemon
+[+6,29s] DEBUG: slick-greeter.vala:836: Got a SIGTERM
+[+6,29s] DEBUG: slick-greeter.vala:844: Cleaning up
+[+6,29s] DEBUG: slick-greeter.vala:857: Exiting
