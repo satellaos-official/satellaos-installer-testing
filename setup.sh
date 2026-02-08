@@ -11,7 +11,7 @@ run_script() {
 
     chmod +x "$script_path"
 
-    "$script_path" >"$log_file" 2>&1
+    script -q -c "$script_path" "$log_file"
 }
 
 echo "Version 13 (Trixie)"
