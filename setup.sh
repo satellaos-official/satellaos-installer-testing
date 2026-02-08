@@ -9,15 +9,9 @@ run_script() {
     script_name="$(basename "$script_path" .sh)"
     local log_file="$LOG_DIR/${script_name}_$(date '+%Y-%m-%d_%H-%M-%S').log"
 
-    echo "▶ Running $script_name (log: $log_file)"
-
     chmod +x "$script_path"
 
-    "$script_path" \
-        > >(while IFS= read -r line; do
-              echo "[$(date '+%Y-%m-%d %H:%M:%S')] $line"
-          done | tee -a "$log_file") \
-        2>&1
+    "$script_path" >"$log_file" 2>&1
 }
 
 echo "Version 13 (Trixie)"
