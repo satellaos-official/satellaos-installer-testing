@@ -1,5 +1,9 @@
 #!/bin/bash
 
-sudo cp ~/satellaos-installer/grub/grub /etc/default/grub
+if [[ ! -f ~/satellaos-installer/grub/grub ]]; then
+    exit 1
+fi
 
-sudo update-grub && sudo update-initramfs -u
+sudo cp ~/satellaos-installer/grub/grub /etc/default/grub
+sudo update-grub
+sudo update-initramfs -u
