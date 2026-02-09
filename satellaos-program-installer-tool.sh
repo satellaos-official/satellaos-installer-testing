@@ -91,7 +91,7 @@ install_3() { # Firefox
 [Desktop Entry]
 Name=Firefox
 Comment=Mozilla Firefox Web Browser
-Exec=/opt/firefox/firefox %u
+Exec=/opt/firefox/firefox %U
 Icon=/opt/firefox/browser/chrome/icons/default/default128.png
 Terminal=false
 Type=Application
@@ -99,6 +99,11 @@ Categories=Network;WebBrowser;
 StartupNotify=true
 EOL
     chmod +x "$DESKTOP_FILE"
+
+update-desktop-database ~/.local/share/applications
+xdg-mime default firefox.desktop x-scheme-handler/http
+xdg-mime default firefox.desktop x-scheme-handler/https
+xdg-settings set default-web-browser firefox.desktop
 }
 
 install_4() {
@@ -129,7 +134,7 @@ install_4() {
 [Desktop Entry]
 Name=Floorp Browser
 Comment=Floorp Web Browser
-Exec=/opt/floorp/floorp %u
+Exec=/opt/floorp/floorp %U
 Icon=$ICON_PATH
 Terminal=false
 Type=Application
@@ -137,6 +142,11 @@ Categories=Network;WebBrowser;
 StartupNotify=true
 EOL
     chmod +x "$DESKTOP_FILE"
+
+update-desktop-database ~/.local/share/applications
+xdg-mime default floorp.desktop x-scheme-handler/http
+xdg-mime default floorp.desktop x-scheme-handler/https
+xdg-settings set default-web-browser floorp.desktop
 }
 
 install_5() { # Google Chrome
@@ -182,7 +192,7 @@ install_8() {
 [Desktop Entry]
 Name=Zen Browser
 Comment=Zen Web Browser
-Exec=$BIN_PATH %u
+Exec=$BIN_PATH %U
 Icon=$ICON_PATH
 Terminal=false
 Type=Application
@@ -190,6 +200,11 @@ Categories=Network;WebBrowser;
 StartupNotify=true
 EOL
     chmod +x "$DESKTOP_FILE"
+
+    update-desktop-database ~/.local/share/applications
+    xdg-mime default zen-browser.desktop x-scheme-handler/http
+    xdg-mime default zen-browser.desktop x-scheme-handler/https
+    xdg-settings set default-web-browser zen-browser.desktop
 }
 
 install_9() { # Disk Usage Analyzer - baobab
