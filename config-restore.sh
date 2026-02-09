@@ -8,24 +8,39 @@ TARGET_USER="$HOME"
 TARGET_ROOT="/root"
 
 #################################
-# USER APPLICATIONS (DESKTOP LAUNCHERS)
+# BASHRC and PROFILE RESTORE (USER)
 #################################
-if [ -d "$BASE/applications" ]; then
-    echo "▶ Restoring user application launchers..."
-    rm -rf "$TARGET_USER/.local/share/applications"
-    mkdir -p "$TARGET_USER/.local/share"
-    cp -a "$BASE/applications/." "$TARGET_USER/.local/share/applications/"
+
+echo "▶ Restoring .bashrc and .profile for user..."
+
+# Restore .bashrc for user
+if [ -f "$BASE/configs/.bashrc" ]; then
+    cp -a "$BASE/configs/.bashrc" "$TARGET_USER/"
+    echo ".bashrc restored for user."
+fi
+
+# Restore .profile for user
+if [ -f "$BASE/configs/.profile" ]; then
+    cp -a "$BASE/configs/.profile" "$TARGET_USER/"
+    echo ".profile restored for user."
 fi
 
 #################################
-# ROOT APPLICATIONS (DESKTOP LAUNCHERS)
+# BASHRC and PROFILE RESTORE (ROOT)
 #################################
-if [ -d "$BASE/applications" ]; then
-    echo "▶ Restoring root application launchers..."
-    sudo rm -rf "$TARGET_ROOT/.local/share/applications"
-    sudo mkdir -p "$TARGET_ROOT/.local/share"
-    sudo cp -a "$BASE/applications/." "$TARGET_ROOT/.local/share/applications/"
-    sudo chown -R root:root "$TARGET_ROOT/.local/share/applications"
+
+echo "▶ Restoring .bashrc and .profile for root..."
+
+# Restore .bashrc for root
+if [ -f "$BASE/configs/.bashrc" ]; then
+    sudo cp -a "$BASE/configs/.bashrc" "$TARGET_ROOT/"
+    echo ".bashrc restored for root."
+fi
+
+# Restore .profile for root
+if [ -f "$BASE/configs/.profile" ]; then
+    sudo cp -a "$BASE/configs/.profile" "$TARGET_ROOT/"
+    echo ".profile restored for root."
 fi
 
 #################################

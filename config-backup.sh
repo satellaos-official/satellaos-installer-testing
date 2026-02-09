@@ -9,15 +9,15 @@ echo "▶ Preparing configuration directory..."
 mkdir -p "$BASE"
 
 #################################
-# USER APPLICATIONS (DESKTOP LAUNCHERS)
+# BASHRC and PROFILE BACKUP
 #################################
 
-echo "▶ Copying user application launchers..."
+echo "▶ Backing up .bashrc and .profile files..."
 
-mkdir -p "$BASE/applications"
+mkdir -p "$BASE/configs"
 
-[ -d "$HOME/.local/share/applications" ] && \
-cp -a "$HOME/.local/share/applications/." "$BASE/applications/"
+[ -f "$HOME/.bashrc" ] && cp -a "$HOME/.bashrc" "$BASE/configs/"
+[ -f "$HOME/.profile" ] && cp -a "$HOME/.profile" "$BASE/configs/"
 
 #################################
 # XFCE (USER)
@@ -31,7 +31,7 @@ mkdir -p "$BASE/xfce/user"
 cp -a "$HOME/.config/xfce4" "$BASE/xfce/user/"
 
 #################################
-# XFCONF (USER)  ← KRİTİK
+# XFCONF (USER)
 #################################
 
 echo "▶ Copying XFCONF user database..."
@@ -53,7 +53,7 @@ sudo cp -a /etc/xdg/xfce4 \
            "$BASE/xfce/system/" 2>/dev/null || true
 
 #################################
-# THUNAR (USER)  ← EKSİK PARÇA
+# THUNAR (USER)
 #################################
 
 echo "▶ Copying Thunar configurations..."
