@@ -86,24 +86,27 @@ install_3() { # Firefox
     tar -xvf "$FILE"
     sudo mv firefox /opt/firefox
     sudo ln -sf /opt/firefox/firefox /usr/local/bin/firefox
-    DESKTOP_FILE="$HOME/.local/share/applications/firefox.desktop"
-    cat > "$DESKTOP_FILE" <<EOL
+    
+    # Sistem geneli desktop dosyası oluştur
+    sudo tee /usr/share/applications/firefox.desktop > /dev/null <<EOL
 [Desktop Entry]
+Version=1.0
 Name=Firefox
 Comment=Mozilla Firefox Web Browser
-Exec=/opt/firefox/firefox %U
+Exec=/opt/firefox/firefox %u
 Icon=/opt/firefox/browser/chrome/icons/default/default128.png
 Terminal=false
 Type=Application
 Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;x-scheme-handler/http;x-scheme-handler/https;
 StartupNotify=true
+StartupWMClass=firefox
 EOL
-    chmod +x "$DESKTOP_FILE"
 
-update-desktop-database ~/.local/share/applications
-xdg-mime default firefox.desktop x-scheme-handler/http
-xdg-mime default firefox.desktop x-scheme-handler/https
-xdg-settings set default-web-browser firefox.desktop
+    update-desktop-database /usr/share/applications 2>/dev/null || true
+    xdg-mime default firefox.desktop x-scheme-handler/http
+    xdg-mime default firefox.desktop x-scheme-handler/https
+    xdg-settings set default-web-browser firefox.desktop
 }
 
 install_4() {
@@ -129,24 +132,27 @@ install_4() {
     sudo ln -sf /opt/floorp/floorp /usr/local/bin/floorp
 
     ICON_PATH="/opt/floorp/browser/chrome/icons/default/default128.png"
-    DESKTOP_FILE="$HOME/.local/share/applications/floorp.desktop"
-    cat > "$DESKTOP_FILE" <<EOL
+    
+    # Sistem geneli desktop dosyası oluştur
+    sudo tee /usr/share/applications/floorp.desktop > /dev/null <<EOL
 [Desktop Entry]
+Version=1.0
 Name=Floorp Browser
 Comment=Floorp Web Browser
-Exec=/opt/floorp/floorp %U
+Exec=/opt/floorp/floorp %u
 Icon=$ICON_PATH
 Terminal=false
 Type=Application
 Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;x-scheme-handler/http;x-scheme-handler/https;
 StartupNotify=true
+StartupWMClass=floorp
 EOL
-    chmod +x "$DESKTOP_FILE"
 
-update-desktop-database ~/.local/share/applications
-xdg-mime default floorp.desktop x-scheme-handler/http
-xdg-mime default floorp.desktop x-scheme-handler/https
-xdg-settings set default-web-browser floorp.desktop
+    update-desktop-database /usr/share/applications 2>/dev/null || true
+    xdg-mime default floorp.desktop x-scheme-handler/http
+    xdg-mime default floorp.desktop x-scheme-handler/https
+    xdg-settings set default-web-browser floorp.desktop
 }
 
 install_5() { # Google Chrome
@@ -187,21 +193,23 @@ install_8() {
 
     ICON_PATH="/opt/zen-browser/browser/chrome/icons/default/default128.png"
 
-    DESKTOP_FILE="$HOME/.local/share/applications/zen-browser.desktop"
-    cat > "$DESKTOP_FILE" <<EOL
+    # Sistem geneli desktop dosyası oluştur
+    sudo tee /usr/share/applications/zen-browser.desktop > /dev/null <<EOL
 [Desktop Entry]
+Version=1.0
 Name=Zen Browser
 Comment=Zen Web Browser
-Exec=$BIN_PATH %U
+Exec=$BIN_PATH %u
 Icon=$ICON_PATH
 Terminal=false
 Type=Application
 Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;x-scheme-handler/http;x-scheme-handler/https;
 StartupNotify=true
+StartupWMClass=zen
 EOL
-    chmod +x "$DESKTOP_FILE"
 
-    update-desktop-database ~/.local/share/applications
+    update-desktop-database /usr/share/applications 2>/dev/null || true
     xdg-mime default zen-browser.desktop x-scheme-handler/http
     xdg-mime default zen-browser.desktop x-scheme-handler/https
     xdg-settings set default-web-browser zen-browser.desktop
