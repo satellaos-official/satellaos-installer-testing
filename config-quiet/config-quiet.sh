@@ -1,15 +1,12 @@
-#!/bin/bash
-set -e
+#!/usr/bin/env bash
+set -euo pipefail
 
-SOURCE="$HOME/satellaos-installer/config-quiet/99-quiet-console.conf"
-TARGET="/etc/sysctl.d/99-quiet-console.conf"
+CONF="/etc/sysctl.d/99-silent-kernel.conf"
 
-echo "Configuring quiet console settings..."
+echo "Configuring kernel printk..."
+echo "kernel.printk = 1 4 1 7" | sudo tee "$CONF" >/dev/null
 
-if [ ! -f "$SOURCE" ]; then
-  echo "ERROR: Config file not found: $SOURCE"
-  exit 1
-fi
-
-sudo cp "$SOURCE" "$TARGET"
+echo "Reloading sysctl settings..."
 sudo sysctl --system
+
+echo "Done."
