@@ -31,8 +31,6 @@ sudo apt install --no-install-recommends -y \
   xfwm4 \
   xfdesktop4 \
   thunar \
-  mousepad \
-  engrampa \
   xorg \
   dbus-x11 \
   x11-xserver-utils \
@@ -57,8 +55,7 @@ sudo apt install --no-install-recommends -y \
 echo "Installing user utilities and desktop tools..."
 sudo apt install --no-install-recommends -y \
   mtp-tools \
-  jmtpfs \
-  unrar
+  jmtpfs
 
 # --------------------------------------------------
 # Fonts, themes, and visual customization

@@ -12,65 +12,68 @@ VERSION="5.3.0"
 CHOICES=$(whiptail --title "SatellaOS Installer v$VERSION" \
     --checklist "Select the programs you want to install:\n(SPACE to mark, ENTER to confirm, TAB to switch between OK/Cancel)" \
     40 70 30 \
-    "1"  "Brave Browser (Deb)"                      OFF \
-    "2"  "Chromium Browser (Deb)"                   OFF \
-    "3"  "Firefox ESR (Deb)"                        OFF \
-    "4"  "Firefox (Portable)"                       OFF \
-    "5"  "Floorp Browser (Portable)"                OFF \
-    "6"  "Google Chrome (Deb)"                      OFF \
-    "7"  "Opera Stable (Deb)"                       OFF \
-    "8"  "Tor Browser (Deb)"                        OFF \
-    "9"  "Vivaldi Stable (Deb)"                     OFF \
-    "10" "Waterfox (Portable)"                      OFF \
-    "11" "Zen Browser (Portable)"                   OFF \
-    "12" "Bitwarden (Flatpak)"                      OFF \
-    "13" "BleachBit (Deb)"                          OFF \
-    "14" "Discord (Flatpak)"                        OFF \
-    "15" "Disk Usage Analyzer - baobab (Deb)"       OFF \
-    "16" "Flatseal (Flatpak)"                       OFF \
-    "17" "Free Download Manager (Deb)"              OFF \
-    "18" "Galculator (Deb)"                         OFF \
-    "19" "GIMP (Deb)"                               OFF \
-    "20" "GIMP (Flatpak)"                           OFF \
-    "21" "GNOME Disk Utility (Deb)"                 OFF \
-    "22" "Gnome Software (Deb)"                     OFF \
-    "23" "GParted (Deb)"                            OFF \
-    "24" "Grub Customizer (Deb)"                    OFF \
-    "25" "Gucharmap (Deb)"                          OFF \
-    "26" "Heroic Games Launcher (Deb)"              OFF \
-    "27" "Heroic Games Launcher (Flatpak)"          OFF \
-    "28" "Inkscape (Deb)"                           OFF \
-    "29" "KDiskMark (Deb)"                          OFF \
-    "30" "KDiskMark (Flatpak)"                      OFF \
-    "31" "KeePassXC (Deb)"                          OFF \
-    "32" "Krita (Flatpak)"                          OFF \
-    "33" "Libre Office (Deb)"                       OFF \
-    "34" "LocalSend (Deb)"                          OFF \
-    "35" "LocalSend (Flatpak)"                      OFF \
-    "36" "Lutris (Deb)"                             OFF \
-    "37" "Lutris (Flatpak)"                         OFF \
-    "38" "MenuLibre (Deb)"                          OFF \
-    "39" "Mintstick (Deb)"                          OFF \
-    "40" "Mission Center (Flatpak)"                 OFF \
-    "41" "OBS Studio (Flatpak)"                     OFF \
-    "42" "Obsidian (Flatpak)"                       OFF \
-    "43" "Pinta (Flatpak)"                          OFF \
-    "44" "PowerISO (Flatpak)"                       OFF \
-    "45" "qBittorrent (Deb)"                        OFF \
-    "46" "Ristretto (Deb)"                          OFF \
-    "47" "Screen Keyboard - Onboard (Deb)"          OFF \
-    "48" "Signal (Deb)"                             OFF \
-    "49" "Steam (Deb)"                              OFF \
-    "50" "Sublime Text (Deb)"                       OFF \
-    "51" "Telegram (Flatpak)"                       OFF \
-    "52" "Thunderbird (Deb)"                        OFF \
-    "53" "Timeshift (Deb)"                          OFF \
-    "54" "VirtualBox [Debian 13 (Deb)]"             OFF \
-    "55" "VLC (Deb)"                                OFF \
-    "56" "VS Code (Deb)"                            OFF \
-    "57" "Warp VPN"                                 OFF \
-    "58" "WineHQ Stable [Debian 13 (Deb)]"          OFF \
-    "59" "Wireshark (Deb)"                          OFF \
+    "1"  "Brave Browser (Deb)"                                   OFF \
+    "2"  "Chromium Browser (Deb)"                                OFF \
+    "3"  "Firefox ESR (Deb)"                                     OFF \
+    "4"  "Firefox (Portable)"                                    OFF \
+    "5"  "Floorp Browser (Portable)"                             OFF \
+    "6"  "Google Chrome (Deb)"                                   OFF \
+    "7"  "Opera Stable (Deb)"                                    OFF \
+    "8"  "Tor Browser (Deb)"                                     OFF \
+    "9"  "Vivaldi Stable (Deb)"                                  OFF \
+    "10" "Waterfox (Portable)"                                   OFF \
+    "11" "Zen Browser (Portable)"                                OFF \
+    "15" "Baobab Disk Usage Analyzer (Deb)"                      OFF \
+    "12" "Bitwarden (Flatpak)"                                   OFF \
+    "13" "BleachBit (Deb)"                                       OFF \
+    "14" "Discord (Flatpak)"                                     OFF \
+    "16" "Engrampa Archive Manager - Recommended (Deb)"          OFF \
+    "17" "Flatseal (Flatpak)"                                    OFF \
+    "18" "Free Download Manager (Deb)"                           OFF \
+    "19" "Galculator - Recommended (Deb)"                        OFF \
+    "20" "GIMP (Deb)"                                            OFF \
+    "21" "GIMP (Flatpak)"                                        OFF \
+    "22" "Gnome Disk Utility (Deb)"                              OFF \
+    "23" "Gnome Software - Recommended (Deb)"                    OFF \
+    "24" "GParted (Deb)"                                         OFF \
+    "25" "Grub Customizer (Deb)"                                 OFF \
+    "26" "Gucharmap (Deb)"                                       OFF \
+    "27" "Heroic Games Launcher (Deb)"                           OFF \
+    "28" "Heroic Games Launcher (Flatpak)"                       OFF \
+    "29" "Inkscape (Deb)"                                        OFF \
+    "30" "KDiskMark (Deb)"                                       OFF \
+    "31" "KDiskMark (Flatpak)"                                   OFF \
+    "32" "KeePassXC (Deb)"                                       OFF \
+    "33" "Krita (Flatpak)"                                       OFF \
+    "34" "Libre Office (Deb)"                                    OFF \
+    "35" "LocalSend (Deb)"                                       OFF \
+    "36" "LocalSend (Flatpak)"                                   OFF \
+    "37" "Lutris (Deb)"                                          OFF \
+    "38" "Lutris (Flatpak)"                                      OFF \
+    "39" "MenuLibre (Deb)"                                       OFF \
+    "40" "Mintstick (Deb)"                                       OFF \
+    "41" "Mission Center - Recommended (Flatpak)"                OFF \
+    "42" "Mousepad - Recommended (Deb)"                          OFF \
+    "43" "OBS Studio (Flatpak)"                                  OFF \
+    "44" "Obsidian (Flatpak)"                                    OFF \
+    "45" "Pinta (Flatpak)"                                       OFF \
+    "46" "PowerISO (Flatpak)"                                    OFF \
+    "47" "qBittorrent (Deb)"                                     OFF \
+    "48" "Ristretto Image Viewer - Recommended (Deb)"            OFF \
+    "49" "Onboard Screen Keyboard (Deb)"                         OFF \
+    "50" "Signal (Deb)"                                          OFF \
+    "51" "Steam (Deb)"                                           OFF \
+    "52" "Sublime Text (Deb)"                                    OFF \
+    "53" "Telegram (Flatpak)"                                    OFF \
+    "54" "Thunderbird (Deb)"                                     OFF \
+    "55" "Timeshift (Deb)"                                       OFF \
+    "56" "Unrar nonfree - Recommended (Deb)"                     OFF \
+    "57" "VirtualBox [Debian 13 (Deb)]"                          OFF \
+    "58" "VLC - Recommended (Deb)"                               OFF \
+    "59" "VS Code (Deb)"                                         OFF \
+    "60" "Warp VPN"                                              OFF \
+    "61" "WineHQ Stable [Debian 13 (Deb)]"                       OFF \
+    "62" "Wireshark (Deb)"                                       OFF \
     3>&1 1>&2 2>&3)
 
 # Exit if the user pressed Cancel
@@ -314,60 +317,65 @@ install_15() {
     sudo apt install -y baobab
 }
 
-# ── 16 ── Flatseal (Flatpak)
+# ── 16 ── Engrampa Archive Manager (Deb)
 install_16() {
+    sudo apt install -y engrampa
+}
+
+# ── 17 ── Flatseal (Flatpak)
+install_17() {
     flatpak install -y --noninteractive flathub com.github.tchx84.Flatseal
 }
 
-# ── 17 ── Free Download Manager (Deb)
-install_17() {
+# ── 18 ── Free Download Manager (Deb)
+install_18() {
     wget -O "$PKG_DIR/freedownloadmanager.deb" \
         https://files2.freedownloadmanager.org/6/latest/freedownloadmanager.deb
     sudo apt install -y "$PKG_DIR/freedownloadmanager.deb"
 }
 
-# ── 18 ── Galculator (Deb)
-install_18() {
+# ── 19 ── Galculator (Deb)
+install_19() {
     sudo apt install -y galculator
 }
 
-# ── 19 ── GIMP (Deb)
-install_19() {
+# ── 20 ── GIMP (Deb)
+install_20() {
     sudo apt install -y gimp
 }
 
-# ── 20 ── GIMP (Flatpak)
-install_20() {
+# ── 21 ── GIMP (Flatpak)
+install_21() {
     flatpak install -y --noninteractive flathub org.gimp.GIMP
 }
 
-# ── 21 ── GNOME Disk Utility (Deb)
-install_21() {
+# ── 22 ── Gnome Disk Utility (Deb)
+install_22() {
     sudo apt install -y gnome-disk-utility
 }
 
-# ── 22 ── Gnome Software (Deb)
-install_22() {
+# ── 23 ── Gnome Software (Deb)
+install_23() {
     sudo apt install -y gnome-software gnome-software-plugin-flatpak
 }
 
-# ── 23 ── GParted (Deb)
-install_23() {
+# ── 24 ── GParted (Deb)
+install_24() {
     sudo apt install -y gparted
 }
 
-# ── 24 ── Grub Customizer (Deb)
-install_24() {
+# ── 25 ── Grub Customizer (Deb)
+install_25() {
     sudo apt install -y grub-customizer
 }
 
-# ── 25 ── Gucharmap (Deb)
-install_25() {
+# ── 26 ── Gucharmap (Deb)
+install_26() {
     sudo apt install -y gucharmap
 }
 
-# ── 26 ── Heroic Games Launcher (Deb)
-install_26() {
+# ── 27 ── Heroic Games Launcher (Deb)
+install_27() {
     HEROIC_URL=$(curl -s https://api.github.com/repos/Heroic-Games-Launcher/HeroicGamesLauncher/releases/latest \
         | grep "browser_download_url" | grep "linux-amd64.deb" | cut -d '"' -f 4)
     HEROIC_FILE=$(basename "$HEROIC_URL")
@@ -375,18 +383,18 @@ install_26() {
     sudo apt install -y "$PKG_DIR/$HEROIC_FILE"
 }
 
-# ── 27 ── Heroic Games Launcher (Flatpak)
-install_27() {
+# ── 28 ── Heroic Games Launcher (Flatpak)
+install_28() {
     flatpak install -y --noninteractive flathub com.heroicgameslauncher.hgl
 }
 
-# ── 28 ── Inkscape (Deb)
-install_28() {
+# ── 29 ── Inkscape (Deb)
+install_29() {
     sudo apt install -y inkscape
 }
 
-# ── 29 ── KDiskMark (Deb)
-install_29() {
+# ── 30 ── KDiskMark (Deb)
+install_30() {
     KDISKMARK_URL=$(curl -s https://api.github.com/repos/JonMagon/KDiskMark/releases/latest \
         | grep "browser_download_url" | grep "amd64.deb" | cut -d '"' -f 4)
     KDISKMARK_FILE=$(basename "$KDISKMARK_URL")
@@ -394,28 +402,28 @@ install_29() {
     sudo apt install -y "$PKG_DIR/$KDISKMARK_FILE"
 }
 
-# ── 30 ── KDiskMark (Flatpak)
-install_30() {
+# ── 31 ── KDiskMark (Flatpak)
+install_31() {
     flatpak install -y --noninteractive flathub io.github.jonmagon.kdiskmark
 }
 
-# ── 31 ── KeePassXC (Deb)
-install_31() {
+# ── 32 ── KeePassXC (Deb)
+install_32() {
     sudo apt install -y keepassxc
 }
 
-# ── 32 ── Krita (Flatpak)
-install_32() {
+# ── 33 ── Krita (Flatpak)
+install_33() {
     flatpak install -y --noninteractive flathub org.kde.krita
 }
 
-# ── 33 ── Libre Office (Deb)
-install_33() {
+# ── 34 ── Libre Office (Deb)
+install_34() {
     sudo apt install -y libreoffice libreoffice-gtk3
 }
 
-# ── 34 ── LocalSend (Deb)
-install_34() {
+# ── 35 ── LocalSend (Deb)
+install_35() {
     LOCALSEND_URL=$(curl -s https://api.github.com/repos/localsend/localsend/releases/latest \
         | grep "browser_download_url" | grep "linux-x86-64.deb" | cut -d '"' -f 4)
     LOCALSEND_FILE=$(basename "$LOCALSEND_URL")
@@ -423,13 +431,13 @@ install_34() {
     sudo apt install -y "$PKG_DIR/$LOCALSEND_FILE"
 }
 
-# ── 35 ── LocalSend (Flatpak)
-install_35() {
+# ── 36 ── LocalSend (Flatpak)
+install_36() {
     flatpak install -y --noninteractive flathub org.localsend.localsend_app
 }
 
-# ── 36 ── Lutris (Deb)
-install_36() {
+# ── 37 ── Lutris (Deb)
+install_37() {
     echo -e "Types: deb\nURIs: https://download.opensuse.org/repositories/home:/strycore:/lutris/Debian_13/\nSuites: ./\nComponents: \nSigned-By: /etc/apt/keyrings/lutris.gpg" \
         | sudo tee /etc/apt/sources.list.d/lutris.sources > /dev/null
     wget -q -O- https://download.opensuse.org/repositories/home:/strycore:/lutris/Debian_13/Release.key \
@@ -438,53 +446,58 @@ install_36() {
     sudo apt install -y lutris
 }
 
-# ── 37 ── Lutris (Flatpak)
-install_37() {
+# ── 38 ── Lutris (Flatpak)
+install_38() {
     flatpak install -y --noninteractive flathub net.lutris.Lutris
 }
 
-# ── 38 ── MenuLibre (Deb)
-install_38() {
+# ── 39 ── MenuLibre (Deb)
+install_39() {
     sudo apt install -y menulibre
 }
 
-# ── 39 ── Mintstick (Deb)
-install_39() {
+# ── 40 ── Mintstick (Deb)
+install_40() {
     sudo apt install -y mintstick
 }
 
-# ── 40 ── Mission Center (Flatpak)
-install_40() {
+# ── 41 ── Mission Center (Flatpak)
+install_41() {
     flatpak install -y --noninteractive flathub io.missioncenter.MissionCenter
 }
 
-# ── 41 ── OBS Studio (Flatpak)
-install_41() {
+# ── 42 ── Mousepad Text Editor (Deb)
+install_42() {
+    sudo apt install -y mousepad
+}
+
+# ── 43 ── OBS Studio (Flatpak)
+install_43() {
     flatpak install -y --noninteractive flathub com.obsproject.Studio
 }
 
-# ── 42 ── Obsidian (Flatpak)
-install_42() {
+# ── 44 ── Obsidian (Flatpak)
+install_44() {
     flatpak install -y --noninteractive flathub md.obsidian.Obsidian
 }
 
-# ── 43 ── Pinta (Flatpak)
-install_43() {
+# ── 45 ── Pinta (Flatpak)
+install_45() {
     flatpak install -y --noninteractive flathub com.github.PintaProject.Pinta
 }
 
-# ── 44 ── PowerISO (Flatpak)
-install_44() {
+# ── 46 ── PowerISO (Flatpak)
+install_46() {
     flatpak install -y --noninteractive flathub com.poweriso.PowerISO
 }
 
-# ── 45 ── qBittorrent (Deb)
-install_45() {
+# ── 47 ── qBittorrent (Deb)
+install_47() {
     sudo apt install -y qbittorrent
 }
 
-# ── 46 ── Ristretto (Deb)
-install_46() {
+# ── 48 ── Ristretto (Deb)
+install_48() {
     sudo apt install -y ristretto \
         libwebp7 \
         tumbler \
@@ -492,13 +505,13 @@ install_46() {
         webp-pixbuf-loader
 }
 
-# ── 47 ── Screen Keyboard - Onboard (Deb)
-install_47() {
+# ── 49 ── Screen Keyboard - Onboard (Deb)
+install_49() {
     sudo apt install -y onboard
 }
 
-# ── 48 ── Signal (Deb)
-install_48() {
+# ── 50 ── Signal (Deb)
+install_50() {
     wget -qO- https://updates.signal.org/desktop/apt/keys.asc \
         | gpg --dearmor | sudo tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] \
@@ -508,15 +521,15 @@ https://updates.signal.org/desktop/apt xenial main" \
     sudo apt install -y signal-desktop
 }
 
-# ── 49 ── Steam (Deb)
-install_49() {
+# ── 51 ── Steam (Deb)
+install_51() {
     wget -O "$PKG_DIR/steam_latest.deb" \
         https://repo.steampowered.com/steam/archive/precise/steam_latest.deb
     sudo apt install -y "$PKG_DIR/steam_latest.deb"
 }
 
-# ── 50 ── Sublime Text (Deb)
-install_50() {
+# ── 52 ── Sublime Text (Deb)
+install_52() {
     wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg \
         | sudo tee /etc/apt/keyrings/sublimehq-pub.asc > /dev/null
     echo -e "Types: deb\nURIs: https://download.sublimetext.com/\nSuites: apt/stable/\nSigned-By: /etc/apt/keyrings/sublimehq-pub.asc" \
@@ -525,23 +538,28 @@ install_50() {
     sudo apt install -y sublime-text
 }
 
-# ── 51 ── Telegram (Flatpak)
-install_51() {
+# ── 53 ── Telegram (Flatpak)
+install_53() {
     flatpak install -y --noninteractive flathub org.telegram.desktop
 }
 
-# ── 52 ── Thunderbird (Deb)
-install_52() {
+# ── 54 ── Thunderbird (Deb)
+install_54() {
     sudo apt install -y thunderbird
 }
 
-# ── 53 ── Timeshift (Deb)
-install_53() {
+# ── 55 ── Timeshift (Deb)
+install_55() {
     sudo apt install -y timeshift
 }
 
-# ── 54 ── VirtualBox [Debian 13 (Deb)]
-install_54() {
+# ── 56 ── Unrar nonfree (Deb)
+install_56() {
+    sudo apt install -y unrar
+}
+
+# ── 57 ── VirtualBox [Debian 13 (Deb)]
+install_57() {
     wget -O oracle_vbox_2016.asc https://www.virtualbox.org/download/oracle_vbox_2016.asc
     sudo gpg --yes --output /usr/share/keyrings/oracle_vbox_2016.gpg --dearmor oracle_vbox_2016.asc
     sudo tee /etc/apt/sources.list.d/virtualbox.list > /dev/null <<EOF
@@ -563,13 +581,13 @@ EOF
     rm -f "$EXT_PACK_FILE"
 }
 
-# ── 55 ── VLC (Deb)
-install_55() {
+# ── 58 ── VLC (Deb)
+install_58() {
     sudo apt install -y vlc
 }
 
-# ── 56 ── VS Code (Deb)
-install_56() {
+# ── 59 ── VS Code (Deb)
+install_59() {
     wget -qO- https://packages.microsoft.com/keys/microsoft.asc \
         | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-archive-keyring.gpg > /dev/null
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/microsoft-archive-keyring.gpg] \
@@ -579,8 +597,8 @@ https://packages.microsoft.com/repos/code stable main" \
     sudo apt install -y code
 }
 
-# ── 57 ── Warp VPN
-install_57() {
+# ── 60 ── Warp VPN
+install_60() {
     curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg \
         | sudo gpg --yes --dearmor --output /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
     echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ $(lsb_release -cs) main" \
@@ -588,8 +606,8 @@ install_57() {
     sudo apt-get update && sudo apt-get install -y cloudflare-warp
 }
 
-# ── 58 ── WineHQ Stable [Debian 13 (Deb)]
-install_58() {
+# ── 61 ── WineHQ Stable [Debian 13 (Deb)]
+install_61() {
     sudo mkdir -pm755 /etc/apt/keyrings
     wget -O - https://dl.winehq.org/wine-builds/winehq.key \
         | sudo gpg --dearmor -o /etc/apt/keyrings/winehq-archive.key -
@@ -600,8 +618,8 @@ install_58() {
     sudo apt install -y --install-recommends winehq-stable
 }
 
-# ── 59 ── Wireshark (Deb)
-install_59() {
+# ── 62 ── Wireshark (Deb)
+install_62() {
     sudo apt install -y wireshark
 }
 
