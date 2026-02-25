@@ -99,100 +99,113 @@ chmod +x "$HOME/satellaos-installer/grub/grub.sh"
 "$HOME/satellaos-installer/grub/grub.sh"
 
 # --------------------------------------------------
-# 11 - Touchpad configuration (tap-to-click)
+# 11 - Installing GRUB Theme
 # --------------------------------------------------
-echo "11 - Applying touchpad configuration..."
+echo "11 - Installing GRUB Theme..."
+sudo bash -c "cd $HOME/satellaos-installer/GRUB-Theme/Makima-1080p/ && ./install.sh"
+
+# --------------------------------------------------
+# 12 - Touchpad configuration (tap-to-click)
+# --------------------------------------------------
+echo "12 - Applying touchpad configuration..."
 chmod +x "$HOME/satellaos-installer/drivers/touchpad-setup.sh"
 "$HOME/satellaos-installer/drivers/touchpad-setup.sh"
 
 # --------------------------------------------------
-# 12 - Bluetooth setup
+# 13 - Bluetooth setup
 # --------------------------------------------------
-echo "12 - Installing and configuring Bluetooth..."
+echo "13 - Installing and configuring Bluetooth..."
 chmod +x "$HOME/satellaos-installer/drivers/bluetooth-setup.sh"
 "$HOME/satellaos-installer/drivers/bluetooth-setup.sh"
 
 # --------------------------------------------------
-# 13 - AMD graphics stack setup (optional)
+# 14 - ADB Driver setup
 # --------------------------------------------------
-echo "13 - Running AMD graphics setup (optional)..."
+echo "14 - Installing ADB driver..."
+chmod +x "$HOME/satellaos-installer/drivers/adb-setup.sh"
+"$HOME/satellaos-installer/drivers/adb-setup.sh"
+
+# --------------------------------------------------
+# 15 - AMD graphics stack setup (optional)
+# --------------------------------------------------
+echo "15 - Running AMD graphics setup (optional)..."
 chmod +x "$HOME/satellaos-installer/drivers/graphics-amd-setup.sh"
 "$HOME/satellaos-installer/drivers/graphics-amd-setup.sh"
 
 # --------------------------------------------------
-# 14 - Intel graphics stack setup (optional)
+# 16 - Intel graphics stack setup (optional)
 # --------------------------------------------------
-echo "14 - Running Intel graphics setup (optional)..."
+echo "16 - Running Intel graphics setup (optional)..."
 chmod +x "$HOME/satellaos-installer/drivers/graphics-intel-setup.sh"
 "$HOME/satellaos-installer/drivers/graphics-intel-setup.sh"
 
 # --------------------------------------------------
-# 15 - Install wallpapers and backgrounds
+# 17 - Install wallpapers and backgrounds
 # --------------------------------------------------
-echo "15 - Installing wallpapers and backgrounds..."
+echo "17 - Installing wallpapers and backgrounds..."
 chmod +x "$HOME/satellaos-installer/backgrounds/backgrounds.sh"
 "$HOME/satellaos-installer/backgrounds/backgrounds.sh"
 
 # --------------------------------------------------
-# 16 - Apply application icons
+# 18 - Apply application icons
 # --------------------------------------------------
-echo "16 - Applying application icons..."
+echo "18 - Applying application icons..."
 chmod +x "$HOME/satellaos-installer/application-icon/application-icon.sh"
 "$HOME/satellaos-installer/application-icon/application-icon.sh"
 
 # --------------------------------------------------
-# 17 - Apply interface customizations
+# 19 - Apply interface customizations
 # --------------------------------------------------
-echo "17 - Applying interface customizations..."
+echo "19 - Applying interface customizations..."
 chmod +x "$HOME/satellaos-installer/interfaces/interfaces.sh"
 "$HOME/satellaos-installer/interfaces/interfaces.sh"
 
 # --------------------------------------------------
-# 18 - Install and configure Fastfetch
+# 20 - Install and configure Fastfetch
 # --------------------------------------------------
-echo "18 - Installing Fastfetch..."
+echo "20 - Installing Fastfetch..."
 chmod +x "$HOME/satellaos-installer/fastfetch/fastfetch.sh"
 "$HOME/satellaos-installer/fastfetch/fastfetch.sh"
 
 # --------------------------------------------------
-# 19 - Fonts Installer
+# 21 - Fonts Installer
 # --------------------------------------------------
-echo "19 - Installing fonts..."
+echo "21 - Installing fonts..."
 chmod +x "$HOME/satellaos-installer/fonts/fonts.sh"
 "$HOME/satellaos-installer/fonts/fonts.sh"
 
 # --------------------------------------------------
-# 20 - Program install
+# 22 - Program install
 # --------------------------------------------------
-echo "20 - Installing programs..."
+echo "22 - Installing programs..."
 chmod +x "$HOME/satellaos-installer/satellaos-program-installer-tool.sh"
 "$HOME/satellaos-installer/satellaos-program-installer-tool.sh"
 
 # --------------------------------------------------
-# 21 - Restore configuration to /etc/skel
+# 23 - Restore configuration to /etc/skel
 # --------------------------------------------------
-echo "21 - Restoring pre-saved configuration to /etc/skel..."
+echo "23 - Restoring pre-saved configuration to /etc/skel..."
 chmod +x "$HOME/satellaos-installer/skel/skel-restore.sh"
 "$HOME/satellaos-installer/skel/skel-restore.sh"
 
 # --------------------------------------------------
-# 22 - Configure quiet console settings
+# 24 - Configure quiet console settings
 # --------------------------------------------------
-echo "22 - Configuring /etc/sysctl.d/99-quiet-console.conf..."
+echo "24 - Configuring /etc/sysctl.d/99-quiet-console.conf..."
 chmod +x "$HOME/satellaos-installer/config-quiet/config-quiet.sh"
 "$HOME/satellaos-installer/config-quiet/config-quiet.sh"
 
 # --------------------------------------------------
-# 23 - Wrapper commands
+# 25 - Wrapper commands
 # --------------------------------------------------
-echo "23 - Wrapper commands adding..."
-chmod +x "$HOME/satellaos-installer/config-quiet/config-quiet.sh"
-"$HOME/satellaos-installer/config-quiet/config-quiet.sh"
+echo "25 - Wrapper commands adding..."
+chmod +x "$HOME/satellaos-installer/command/command.sh"
+"$HOME/satellaos-installer/command/command.sh"
 
 # --------------------------------------------------
-# 24 - Apply final system configuration
+# 26 - Apply final system configuration
 # --------------------------------------------------
-echo "24 - Applying final configuration..."
+echo "26 - Applying final configuration..."
 chmod +x "$HOME/satellaos-installer/config-restore.sh"
 "$HOME/satellaos-installer/config-restore.sh"
 

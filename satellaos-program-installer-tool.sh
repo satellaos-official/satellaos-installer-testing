@@ -74,6 +74,9 @@ CHOICES=$(whiptail --title "SatellaOS Installer v$VERSION" \
     "60" "Warp VPN"                                              OFF \
     "61" "WineHQ Stable [Debian 13 (Deb)]"                       OFF \
     "62" "Wireshark (Deb)"                                       OFF \
+    "63" "XFCE4 Appfinder (Deb)"                                 OFF \
+    "64" "XFCE4 Screenshooter (Deb)"                             OFF \
+    "65" "LightDM Settings (Deb)"                                OFF \
     3>&1 1>&2 2>&3)
 
 # Exit if the user pressed Cancel
@@ -621,6 +624,21 @@ install_61() {
 # ── 62 ── Wireshark (Deb)
 install_62() {
     sudo apt install -y wireshark
+}
+
+# ── 63 ── XFCE4 Appfinder (Deb)
+install_63() {
+    sudo apt install -y xfce4-appfinder
+}
+
+# ── 64 ── XFCE4 Screenshooter (Deb)
+install_64() {
+    sudo apt install -y xfce4-screenshooter
+}
+
+# ── 65 ── LightDM Settings (Deb)
+install_65() {
+    sudo apt install -y lightdm-settings
 }
 
 # ────────────────────────────────────────────
