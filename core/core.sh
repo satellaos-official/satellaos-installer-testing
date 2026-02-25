@@ -9,7 +9,6 @@ sudo apt update
 
 sudo apt install --no-install-recommends -y \
   xfce4 \
-  xfce4-appfinder \
   xfce4-battery-plugin \
   xfce4-clipman \
   xfce4-clipman-plugin \
@@ -27,7 +26,6 @@ sudo apt install --no-install-recommends -y \
   xfce4-terminal \
   xfce4-whiskermenu-plugin \
   xfce4-notifyd \
-  xfce4-screenshooter \
   xfwm4 \
   xfdesktop4 \
   thunar \
@@ -36,7 +34,6 @@ sudo apt install --no-install-recommends -y \
   x11-xserver-utils \
   lightdm \
   slick-greeter \
-  lightdm-settings \
   light-locker \
   ntfs-3g \
   pulseaudio \
@@ -45,17 +42,6 @@ sudo apt install --no-install-recommends -y \
   gvfs \
   gvfs-backends \
   gvfs-fuse
-
-  
-
-# --------------------------------------------------
-# User utilities and desktop tools
-# Not required for basic system operation
-# --------------------------------------------------
-echo "Installing user utilities and desktop tools..."
-sudo apt install --no-install-recommends -y \
-  mtp-tools \
-  jmtpfs
 
 # --------------------------------------------------
 # Fonts, themes, and visual customization
